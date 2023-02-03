@@ -9,6 +9,7 @@
   --biru-cerah: #1352ff;
   --ungu: #496ddb;
   --hijau: #47bb8e;
+  --abu: #E8EDF4;
 }
 
 *,
@@ -111,6 +112,14 @@ section {
 
 .mb-30 {
   margin-bottom: 30px;
+}
+
+.mb-50 {
+  margin-bottom: 50px;
+}
+
+.mb-100 {
+  margin-bottom: 100px;
 }
 
 .mt-100 {
@@ -341,6 +350,7 @@ header .kanan .keranjang {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
+  cursor: pointer;
   background-color: #cfcfdb;
 }
 
@@ -375,6 +385,7 @@ header .kanan .search {
 header .kanan .fotoUser {
   width: 45px;
   height: 45px;
+  cursor: pointer;
   object-fit: cover;
   border-radius: 50%;
   padding: 3px;
@@ -617,18 +628,32 @@ form button {
   padding-bottom: 100px;
   background-color: #111827;
   display: flex;
+}
+
+.footer .aboutFooter {
+  flex: 1 1 15rem;
+  margin-right: 20px;
+}
+
+.footer .links {
+  width: 70%;
+  display: flex;
   flex-wrap: wrap;
 }
 
+.footer .aboutFooter .box {
+  width: 100%;
+}
+
 .footer .box {
-  flex: 1 1 15rem;
-  margin: 1rem;
+  width: calc(90%/3);
+  margin: 1rem 0;
 }
 
 .footer .box h2 {
-  font-size: 2rem;
+  font-size: 1.2rem;
   font-weight: 600;
-  padding: 1rem 0;
+  padding: .6rem 0;
   color: var(--putih);
 }
 
@@ -648,7 +673,7 @@ form button {
 
 .footer .box a {
   font-size: 1rem;
-  padding: 0.5rem 0;
+  padding: 0.3rem 0;
   display: flex;
   color: var(--putih);
 }
@@ -829,6 +854,7 @@ footer p span {
 }
 
 .title p {
+  text-transform: uppercase;
   color: var(--hijau) !important;
   font-size: 1.1rem;
   font-weight: 500;
