@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membangun Forum Dengan TDD | SMAKDA Classroom</title>
+    <link rel="stylesheet" href="css/font/font.css">
+    <link rel="stylesheet" href="css/riset/riset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form/form.css">
+    <link rel="stylesheet" href="css/responsive/responsive.css">
+
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <script src="fontawesome/js/all.min.js" defer></script>
+
+    <link rel="apple-touch-icon" href="img/logo.png">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="kanan">
+                <a href="" class="logo">
+                    <!-- <img src="img/logo.png" alt="logo"> -->
+                    <h1>SMAKDA<br><span>Classroom</span></h1>
+                </a>
+
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="series.html" class="active">Series</a></li>
+                        <li><a href="artikel.html">Artikel</a></li>
+                        <li><a href="community.html">Community</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="kiri">
+
+                <div class="icon cari">
+                    <i class="fas fa-search"></i>
+                </div>
+
+                <span class="garis">|</span>
+
+                <div class="auth ">
+                    <a href="">Login</a>
+                    <a href="">Register</a>
+                </div>
+
+                <div class="profil d-none">
+                    <img src="img/people/img1.jpg" alt="img user">
+                </div>
+
+                <div class="menu">
+                    <input type="checkbox">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+            </div>
+        </div>
+
+    </header>
+
+
+    <nav class="containerNavMobile">
+        <div class="navMobile pt-15-vh">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="series.html">Series</a></li>
+                <li><a href="artikel.html">Artikel</a></li>
+                <li><a href="community.html">Community</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+
+        <!-- 30 rem -->
+        <section class="heroDetailKelas pt-100 pb-100">
+            <div class="container">
+
+                <div class="caption">
+                    <h1>Membangun Forum Dengan TDD</h1>
+
+                    <p>
+                        Dalam seri ini, kita akan membangun forum dengan test driven development, yang mana kita akan
+                        mengimplementasikan pest dari pada phpunit, kita juga akan menggunakan inertia disertai dengan
+                        tailwindcss.
+                    </p>
+
+                    <ul class="keterangan">
+                        <li class="perKeterangan">
+                            <div class="icon">
+                                <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <p>23 October</p>
+                        </li>
+
+                        <li class="perKeterangan">
+                            <div class="icon">
+                                <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 6h16M4 12h8m-8 6h16"></path>
+                                </svg>
+                            </div>
+                            <p>Intermediate</p>
+                        </li>
+
+                        <li class="perKeterangan">
+                            <div class="icon">
+                                <svg fill="currentColor" viewBox="0 0 16 16">
+                                    <path
+                                        d="M6 10.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <p>23 Episode</p>
+                        </li>
+                    </ul>
+
+                    <a href="" class="btn btn-primary"><i class="fas fa-play mr-10"></i>Start</a>
+                    <a href="" class="btn btn-dark"><i class="fas fa-code mr-10"></i>Source Code</a>
+                    <!-- <div class="btn"></div> -->
+
+                </div>
+
+                <!-- <div class="img"></div> -->
+                <img src="img/kelas/Skilvul asset volume 2-03.jpg" alt="img kelas">
+            </div>
+        </section>
+
+
+        <!-- detail kelas -->
+        <section class="detailKelas pt-50 pb-100">
+            <div class="container">
+                <div class="tentangKelas">
+
+                    <div class="perTentangKelas">
+
+                        <h2>Tentang Kelas</h2>
+
+                        <p>
+                            Di kelas ini, kita akan belajar bagaimana membuat sebuah website dari awal dengan
+                            menggunakan
+                            HTML.
+                            Dengan HTML, kita bisa membuat struktur dan kerangka sebuah website yang terdiri dari
+                            beberapa
+                            element.
+                            HTML juga berfungsi sebagai penampil konten pada website kita.
+                        </p>
+
+                    </div>
+
+
+
+                    <div class="perTentangKelas">
+                        <h2>Materi</h2>
+
+                        <div class="materi">
+                            <a href="perDetailSeries.html">Struktur Dokumen HTML</a>
+                            <a href="perDetailSeries.html">HTML Tag, Element, Attribute & Comment</a>
+                            <a href="perDetailSeries.html">HTML Tag Untuk Menampilkan Teks</a>
+                            <a href="perDetailSeries.html">HTML Tag Untuk Multimedia</a>
+                            <a href="perDetailSeries.html">HTML Tag Untuk Tabel</a>
+                            <a href="perDetailSeries.html">HTML Tag Untuk Formulir</a>
+                            <a href="perDetailSeries.html">HTML Tag Untuk Membagi Layout Website</a>
+                        </div>
+                    </div>
+
+
+                    <div class="perTentangKelas">
+                        <h2>Persiapan Kelas</h2>
+
+                        <p>Kamu dapat mengikuti kelas ini tanpa latar belakang IT sebelumnya. Kelas ini didesain untuk
+                            Pemula.</p>
+                    </div>
+
+
+
+
+                </div>
+
+                <div class="infoKelas">
+                    <div class="perInfoKelas">
+                        <h2>Detail Kelas</h2>
+
+                        <div class="infoMateri">
+                            <img src="img/kelas/total-topics.svg" alt="img info materi">
+                            <p>8 Episode</p>
+                        </div>
+
+                        <div class="infoMateri">
+                            <img src="img/kelas/total-points.svg" alt="img info materi">
+                            <p>Intermediate</p>
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="perInfoKelas">
+                        <h2>Mentor</h2>
+
+                        <div class="mentor">
+                            <img src="img/people/img1.jpg" alt="mentor">
+                            <p>Rifki Romadhan</p>
+                        </div>
+
+                        <div class="mentor">
+                            <img src="img/people/img1.jpg" alt="mentor">
+                            <p>Kimak Bersaudara</p>
+                        </div>
+
+                        <div class="mentor">
+                            <img src="img/people/img1.jpg" alt="mentor">
+                            <p>Anjay Kimak</p>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="containerClient pb-100 pt-50">
+            <div class="container">
+
+                <div class="clientTitle">
+                    <h2>Classroom</h2>
+                    <p>
+                        SMAKDA Classroom adalah platform pembelajaran online yang berbentuk screencast yang ditujukan
+                        untuk para
+                        siswa RPL SMKN 2 Purbalingga. Melalui seri-seri seperti Laravel, Reactjs, Vuejs, Inertiajs,
+                        Html, Bootstrap,
+                        Tailwind CSS, dan Banyak lagi.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="containerKerjasama pt-50">
+            <div class="container">
+                <div class="caption">
+                    <h2>Tertarik Untuk Kolaborasi?</h2>
+                    <p>Memiliki kemampuan dibidang IT, dan ingin mengembangkan Platform SMAKDA Classroom? Hubungi para
+                        pengembang awal untuk mendapatkan akses tersebut!</p>
+                </div>
+
+                <div class="cta">
+                    <a href="" class="btn btn-primary">Hubungi</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="footer">
+            <div class="container">
+                <div class="box">
+                    <div class="logo">
+                        <h2>About Us</h2>
+                    </div>
+                    <p>
+                        SMAKDA Classroom adalah platform pembelajaran online yang berbentuk screencast yang ditujukan
+                        untuk para
+                        siswa RPL SMKN 2 Purbalingga.
+                    </p>
+                    <p>
+                        SMAKDA Classroom is a Trademark of <a href="github.com/IkkiRama" class="pencipta">Rifki
+                            Romadhan</a>. Copyright
+                        &copy;2021 ™
+                    </p>
+                </div>
+
+                <div class="box">
+                    <h2>Extra</h2>
+                    <a href="index.html">FAQ</a>
+                    <a href="destinasi.html">Blog</a>
+                    <a href="destinasi.html">Asset</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="kontak.html">Privacy Policy</a>
+                    <a href="kontak.html">Saweria (Donate)</a>
+                    <a href="kontak.html">Terms & Condition</a>
+                </div>
+
+
+                <div class="box">
+                    <h2>Social</h2>
+                    <a href="index.html">Github</a>
+                    <a href="destinasi.html">Twitter</a>
+                    <a href="kontak.html">Discord</a>
+                    <a href="kontak.html">Youtube</a>
+                    <a href="kontak.html">Telegram</a>
+                    <a href="kontak.html">Facebook</a>
+                    <a href="kontak.html">Instagram</a>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            SMAKDA Classroom &copy; 2021 | platform pembelajaran online.
+        </div>
+    </footer>
+
+
+    <div class="modalContainer">
+        <div class="modal">
+            <div class="modal-title">
+                <h2>Cari Series</h2>
+
+                <div class="icon close">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+
+            <div class="modal-body">
+                <div class="searchBox">
+
+                    <form action="">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <input type="text" placeholder="Cari serie">
+                                <button class="btn btn-primary"><i class="fas fa-search"></i></button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <div class="suggesti">
+                        <a href="" class="perSuggesti">HTML</a>
+                        <a href="" class="perSuggesti">CSS</a>
+                        <a href="" class="perSuggesti">HTML</a>
+                        <a href="" class="perSuggesti">CSS</a>
+                        <a href="" class="perSuggesti">HTML</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="modal-footer">
+                <a href="" class="btn btn-primary">Lihat Semua Pencarian</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
