@@ -22,6 +22,7 @@
   outline: none;
   box-sizing: border-box;
   list-style: none;
+  word-wrap: break-word;
   font-display: sans-serif;
   scroll-behavior: smooth;
   scrollbar-width: auto;
@@ -866,4 +867,119 @@ footer p span {
   font-size: 2rem;
   font-weight: 700;
   line-height: 3rem;
+}
+
+
+
+.courses {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.courses .perCourses {
+  width: calc(90%/3);
+  margin: 20px;
+  border: 1px solid var(--abu);
+  border-radius: 16px;
+  box-shadow: 0 .3rem .3rem rgba(0, 0, 0.1, 0.3);
+}
+
+.courses .perCourses img {
+  min-height: 200px !important;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  max-height: 210px;
+  object-fit: cover;
+  width: 100%;
+  background-color: var(--abu);
+}
+
+.courses .perCourses .caption {
+  padding: 15px;
+}
+
+.courses .perCourses h2 {
+  font-size: 1.25rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.courses .perCourses p {
+  color: #999aa4;
+  margin-top: .5rem;
+  font-size: .875rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+.courses .perCourses .infoCourses {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.courses .perCourses .infoCourses .perInfoCourses {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7px 15px;
+  background-color: #e0e4f3;
+  border-radius: 5px;
+  color: #4256ac;
+  text-align: center;
+}
+
+
+.courses .perCourses .infoCourses .perInfoCourses span {
+  font-size: .875rem;
+  margin-left: .5rem;
+  color: #4256ac;
+  font-weight: 600;
+}
+
+.courses .perCourses .price {
+  display: flex;
+  align-items: center;
+  padding-top: 15px;
+  justify-content: space-between;
+  border-top: 1px solid var(--abu);
+}
+
+.courses .perCourses .price .perPrice {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.courses .perCourses button {
+  width: 100%;
+  margin-top: 20px;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0
+  }
+}
+
+.discPrice {
+  margin-left: 10px;
+  font-size: 1.2rem;
+}
+
+.oriPrice {
+  font-size: 1rem;
+  color: #f65d6d !important;
+  font-weight: 500;
+  text-decoration: line-through;
+  animation: blinker 1s linear infinite;
 }

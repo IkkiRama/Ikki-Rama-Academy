@@ -163,62 +163,217 @@ section:nth-child(4) .keunggulan .perKeunggulan .caption h2 {
     margin-bottom: 20px;
 }
 
+
+
+
+
+
 section:nth-child(5) .title {
     text-align: center;
 }
 
 
-section:nth-child(5) .FAQ {
-    display: flex;
-    /* align-items: center; */
-    justify-content: space-between;
-    flex-wrap: wrap;
+@keyframes moveSlideshowToLeft {
+    0% {
+        transform: translateX(0)
+    }
+
+    to {
+        transform: translateX(-100%)
+    }
 }
 
-section:nth-child(5) .FAQ .perFAQ {
-    width: calc(90%/2);
+
+@keyframes moveSlideshowToRight {
+    0% {
+        transform: translateX(0)
+    }
+
+    to {
+        transform: translateX(100%)
+    }
+}
+
+.stack {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    row-gap: 30px;
+    transform: translateZ(0);
+    width: 100%;
+}
+
+.stack:hover .stackRow1,
+.stack:hover .stackRow2 {
+    animation-play-state: paused;
+    ;
+}
+
+.stack:first-child {
+    justify-content: flex-end;
+}
+
+.stack .stackRow1,
+.stack .stackRow2 {
+    animation: 25s linear infinite;
+    display: flex;
+    height: 100%;
+    transform: translateZ(0);
+}
+
+.stack .stackRow1 {
+    animation-name: moveSlideshowToRight;
+}
+
+.stack .stackRow1 .perStack {
+    margin-right: 30px;
+}
+
+.stack .stackRow2 {
+    animation-name: moveSlideshowToLeft;
+}
+
+.stack .stackRow2 .perStack {
+    margin-left: 30px;
+}
+
+.stack .perStack {
+    min-width: 288px;
+    align-items: center;
+    background-color: var(--putih);
+    border: 0;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    padding: 20px;
+    position: relative;
+    transition: all .3s ease-in-out;
+    border: 1px solid var(--putih);
+}
+
+.stack .perStack:hover {
+    border: 1px solid var(--biru-cerah);
+}
+
+.stack .perStack img {
+    margin-right: 20px;
+    height: auto;
+    max-height: 70px;
+    max-width: 70px;
+    width: 100%;
+}
+
+.stack .perStack .caption h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 2rem;
+    margin: 0;
+    text-transform: capitalize;
+}
+
+.stack .perStack .caption p {
+    color: #999aa4;
+    font-size: .9rem;
+    font-weight: 400;
+    margin: 4px 0 0;
+}
+
+.stack .perStack,
+.stack .perStack .caption p {
+    width: max-content;
+}
+
+
+
+
+
+.faqSection .title {
+    text-align: center;
+}
+
+
+.faqSection .FAQ {
+    display: flex;
+    height: 100%;
+    /* justify-content: space-between; */
+    /* flex-wrap: wrap; */
+    overflow-anchor: none;
+}
+
+.faqSection .FAQ .kanan,
+.faqSection .FAQ .kiri {
+    height: 100%;
+}
+
+.faqSection .FAQ .kiri {
+    margin-right: 20px;
+}
+
+.faqSection .FAQ .perFAQ {
+    width: 100%;
     margin-top: 20px;
     border-radius: 1rem;
     border: 2px solid var(--abu);
     height: 70px;
-    /* display: flex; */
-    /* align-items: center; */
-    /* justify-content: center; */
-    /* flex-direction: column; */
     overflow-y: hidden;
     cursor: pointer;
 
 }
 
-section:nth-child(5) .FAQ .perFAQ h2 {
+.faqSection .FAQ .perFAQ h2 {
     font-size: 1.2rem;
     font-weight: 600;
     padding: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: var(--putih);
 }
 
-section:nth-child(5) .FAQ .perFAQ h2 i {
-    color: var(--hijau) !important;
+.faqSection .FAQ .perFAQ h2 .icon {
+    transition: .5s ease-in;
 }
 
-section:nth-child(5) .FAQ .perFAQ p {
+.faqSection .FAQ .perFAQ h2 .icon.active {
+    transform: rotate(180deg);
+}
+
+.faqSection .FAQ .perFAQ p {
     padding: 20px;
     padding-top: 10px;
-    transform: translateY(100%);
+    transition: .5s ease-out;
 }
 
-section:nth-child(5) .FAQ .perFAQ.isActive {
+.faqSection .FAQ .perFAQ.isActive {
     overflow-y: visible;
     cursor: default;
     height: 100%;
 }
 
-section:nth-child(5) .FAQ .perFAQ.isActive h2 {
+.faqSection .FAQ .perFAQ.isActive h2 {
     cursor: pointer;
 }
 
-section:nth-child(5) .FAQ .perFAQ.isActive p {
+.faqSection .FAQ .perFAQ.isActive p {
+    transition: .5s ease-out;
     transform: translateY(0);
+}
+
+.coursesHome {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding-left: 700px;
+    touch-action: pan-y;
+}
+
+/* .coursesHome>* {
+    width: 1000px !important;
+} */
+
+.coursesHome .perCourses {
+    min-width: 350px;
+    width: 350px !important;
 }
