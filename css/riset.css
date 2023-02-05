@@ -143,6 +143,55 @@ section {
   color: var(--ungu);
 }
 
+
+.d-flex {
+  display: flex;
+}
+
+.justify-content-start {
+  justify-content: start;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-space-between {
+  justify-content: space-between;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.align-items-start {
+  align-items: flex-start;
+}
+
+.align-items-end {
+  align-items: flex-end;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+
+
+.row {
+  flex-direction: row;
+}
+
+.column {
+  flex-direction: column;
+}
+
+
+
+
 .btn {
   display: inline-block;
   padding: 8px 25px;
@@ -880,7 +929,7 @@ footer p span {
 
 .courses .perCourses {
   width: calc(90%/3);
-  margin: 20px;
+  margin: 20px 15px;
   border: 1px solid var(--abu);
   border-radius: 16px;
   box-shadow: 0 .3rem .3rem rgba(0, 0, 0.1, 0.3);
@@ -906,7 +955,7 @@ footer p span {
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 1;
 }
 
 .courses .perCourses p {
@@ -974,6 +1023,7 @@ footer p span {
 .discPrice {
   margin-left: 10px;
   font-size: 1.2rem;
+  font-weight: 600;
 }
 
 .oriPrice {

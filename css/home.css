@@ -298,8 +298,6 @@ section:nth-child(5) .title {
 .faqSection .FAQ {
     display: flex;
     height: 100%;
-    /* justify-content: space-between; */
-    /* flex-wrap: wrap; */
     overflow-anchor: none;
 }
 
@@ -362,18 +360,208 @@ section:nth-child(5) .title {
     transform: translateY(0);
 }
 
-.coursesHome {
-    overflow-x: auto;
-    flex-wrap: nowrap;
-    padding-left: 700px;
-    touch-action: pan-y;
+
+@keyframes move {
+    0% {
+        top: 70px
+    }
+
+    50% {
+        top: -55px
+    }
+
+    to {
+        top: 70px
+    }
 }
 
-/* .coursesHome>* {
-    width: 1000px !important;
-} */
 
-.coursesHome .perCourses {
-    min-width: 350px;
-    width: 350px !important;
+@keyframes move-down {
+    0% {
+        bottom: 70px
+    }
+
+    50% {
+        bottom: -55px
+    }
+
+    to {
+        bottom: 70px
+    }
+}
+
+
+.testimonialContainer {
+    background-color: #181230;
+    height: 600px;
+    overflow: hidden;
+}
+
+.testimonialContainer .caption {
+    width: 40%;
+    margin-right: 20px;
+}
+
+.testimonialContainer img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #999aa4;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+
+
+.testimonialContainer .caption h1 {
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 69px !important;
+    color: var(--putih);
+}
+
+.testimonialContainer .caption p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    color: var(--putih);
+}
+
+
+
+.testimonialContainer .testimonial {
+    width: 60%;
+}
+
+.testimonialContainer .testimonial .testimoni {
+    /* overflow-y: scroll; */
+    position: relative;
+}
+
+.testimonialContainer .testimonial .testimoni:first-child {
+    animation: move 15s ease-in infinite;
+    top: 50px;
+}
+
+.testimonialContainer .testimonial .testimoni:last-child {
+    animation: move-down 15s ease-in infinite;
+    bottom: 50px;
+}
+
+.testimonialContainer .testimonial .testimoni .perTestimoni {
+    padding: 20px;
+    width: 300px;
+    border-radius: 1rem;
+    border: 1px solid #999aa4;
+    background-color: var(--putih);
+    margin: 15px;
+}
+
+.testimonialContainer .testimonial .testimoni .perTestimoni h2 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    line-height: 2rem;
+}
+
+.testimonialContainer .testimonial .testimoni .perTestimoni p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    /* width: max-content; */
+    text-align: left !important;
+}
+
+.testimonialContainer .testimonial .testimoni .perTestimoni .profil .infoUser h3 {
+    font-size: .9rem;
+    font-weight: 700;
+    line-height: 18px;
+}
+
+.testimonialContainer .testimonial .testimoni .perTestimoni .profil .infoUser span {
+    color: #999aa4;
+    font-size: .8rem;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+
+
+.perArtikel {
+    width: calc(90%/3);
+    height: 450px;
+    margin: 10px;
+    /* border: 1px solid #999aa4; */
+    /* border-radius: 10px; */
+}
+
+.perArtikel .img span,
+.perArtikel .date span {
+    padding: 5px 15px;
+    border-radius: 1rem;
+    font-size: .7rem;
+    font-weight: 500;
+    color: var(--putih);
+    background-color: #4256ac;
+}
+
+.perArtikel .img {
+    height: 200px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.perArtikel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: #999aa4;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.perArtikel .img span {
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    font-size: .9rem;
+}
+
+.perArtikel h2,
+.perArtikel p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
+.perArtikel h2 {
+    -webkit-line-clamp: 2;
+}
+
+.perArtikel p {
+    -webkit-line-clamp: 3;
+}
+
+.perArtikel .date span {
+    /* margin: 10px; */
+    /* padding: 20px; */
+}
+
+.perArtikel h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 2rem;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.perArtikel p {
+    font-size: .9rem;
+    color: #999aa4;
+    padding: 0 10px;
 }
