@@ -275,9 +275,9 @@ section:nth-child(5) .title {
 }
 
 .stack .perStack .caption p {
-    color: var(--border-color);
+    color: #79797a;
     font-size: .9rem;
-    font-weight: 400;
+    font-weight: 500;
     margin: 4px 0 0;
 }
 
@@ -466,9 +466,9 @@ section:nth-child(5) .title {
 }
 
 .testimonialContainer .testimonial .testimoni .perTestimoni p {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 1.5rem;
     margin-bottom: 20px;
     margin-top: 10px;
     /* width: max-content; */
@@ -482,9 +482,9 @@ section:nth-child(5) .title {
 }
 
 .testimonialContainer .testimonial .testimoni .perTestimoni .profil .infoUser span {
-    color: var(--border-color);
-    font-size: .8rem;
-    font-weight: 400;
+    color: #79797a;
+    font-size: .9rem;
+    font-weight: 500;
     line-height: 18px;
 }
 
@@ -494,8 +494,6 @@ section:nth-child(5) .title {
     width: calc(90%/3);
     height: 450px;
     margin: 10px;
-    /* border: 1px solid var(--border-color); */
-    /* border-radius: 10px; */
 }
 
 .perArtikel .img span,
@@ -546,11 +544,6 @@ section:nth-child(5) .title {
     -webkit-line-clamp: 3;
 }
 
-.perArtikel .date span {
-    /* margin: 10px; */
-    /* padding: 20px; */
-}
-
 .perArtikel h2 {
     font-size: 1.2rem;
     font-weight: 700;
@@ -562,6 +555,6 @@ section:nth-child(5) .title {
 
 .perArtikel p {
     font-size: .9rem;
-    color: var(--border-color);
+    color: #79797a;
     padding: 0 10px;
 }

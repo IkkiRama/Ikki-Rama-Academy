@@ -129,6 +129,10 @@ section {
   margin-top: 100px;
 }
 
+.mr-10 {
+  margin-right: 10px;
+}
+
 .no-wrap {
   flex-wrap: nowrap !important;
 }
@@ -961,9 +965,9 @@ footer p span {
 }
 
 .courses .perCourses p {
-  color: #999aa4;
+  color: #79797a;
   margin-top: .5rem;
-  font-size: .875rem;
+  font-size: .9rem;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
@@ -1030,8 +1034,8 @@ footer p span {
 
 .oriPrice {
   font-size: 1rem;
-  color: #f65d6d !important;
-  font-weight: 500;
+  color: #fa3f52 !important;
+  font-weight: 600;
   text-decoration: line-through;
   animation: blinker 1s linear infinite;
 }
