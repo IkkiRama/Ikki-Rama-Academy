@@ -72,6 +72,27 @@
     font-weight: 450;
 }
 
+.detailKelas .tentangKelas .perTentangKelas .content p {
+    margin: 20px 0;
+}
+
+.detailKelas .tentangKelas .perTentangKelas .content a {
+    color: var(--biru-cerah);
+    font-weight: 600;
+}
+
+.detailKelas .tentangKelas .perTentangKelas .content h3,
+.detailKelas .tentangKelas .perTentangKelas .content h4,
+.detailKelas .tentangKelas .perTentangKelas .content h5,
+.detailKelas .tentangKelas .perTentangKelas .content h6 {
+    margin: 15px 0;
+}
+
+.detailKelas .tentangKelas .perTentangKelas .content li {
+    list-style: disc;
+    margin: 5px 20px;
+}
+
 .detailKelas .tentangKelas .perTentangKelas .materi {
     width: 100%;
 }
@@ -171,4 +192,54 @@
 
 .detailKelas .infoKelas .perInfoKelas .mentor p {
     font-weight: 500;
+}
+
+.requirement .perRequirement,
+.review .perReview {
+    padding: 20px;
+    margin: 10px 0;
+    background-color: #EFF2F6;
+    border-radius: 10px;
+}
+
+.requirement .perRequirement h3 {
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+
+}
+
+.requirement .perRequirement span {
+    font-size: .9rem;
+    font-weight: 600;
+    color: var(--biru-cerah);
+}
+
+
+.kategori .perKategori {
+    margin: 0 7px;
+    background-color: #EFF2F6;
+    padding: 5px 15px;
+    box-shadow: 0 .2rem .4rem rgba(0, 0, .1, .2);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.kategori .perKategori:first-child {
+    margin-left: 0;
+}
+
+.review .perReview {
+    width: calc(90%/2);
+    margin: 10px;
+}
+
+.review .perReview .bintang {
+    margin-bottom: 20px;
+}
+
+.review .perReview h3 {
+    margin-top: 10px;
 }
