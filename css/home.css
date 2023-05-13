@@ -1,560 +1,543 @@
 .Mainbanner {
-    width: 100%;
-    height: 100vh;
-    position: relative;
+  width: 100%;
+  height: 100vh;
+  position: relative;
 }
 
 .Mainbanner .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .Mainbanner .caption {
-    width: 70%;
+  width: 70%;
 }
 
 .Mainbanner h1 {
-    display: flex;
-    flex-direction: column;
-    font-weight: 500;
-    font-size: 4.5rem;
-    line-height: 5.2rem;
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  font-size: 4.5rem;
+  line-height: 5.2rem;
 }
 
 .Mainbanner h1 span span {
-    font-weight: 600;
-    color: var(--yellow-collor);
+  font-weight: 600;
+  color: var(--yellow-collor);
 }
 
 .Mainbanner h1 span:nth-child(2) {
-    font-weight: 700;
-    color: var(--ungu);
+  font-weight: 700;
+  color: var(--ungu);
 }
 
 .Mainbanner p {
-    margin-top: 30px;
-    font-size: 1.5rem;
+  margin-top: 30px;
+  font-size: 1.5rem;
 }
 
 .Mainbanner img {
-    position: absolute;
-    top: 0;
+  position: absolute;
+  top: 0;
 }
 
 .Mainbanner img:first-child {
-    left: 0;
+  left: 0;
 }
 
 .Mainbanner img:last-child {
-    right: 0;
+  right: 0;
 }
 
 .Mainbanner .cta {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 .Mainbanner .cta button {
-    margin: 0 10px;
-    padding: 12px 30px;
+  margin: 0 10px;
+  padding: 12px 30px;
 }
 
 section:nth-child(2) .roadmap {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
 }
 
 section:nth-child(2) .roadmap .perRoadmap {
-    width: calc(90% / 3);
+  width: calc(90% / 3);
 }
 
 section:nth-child(2) .roadmap .perRoadmap img {
-    min-height: 200px !important;
-    border-radius: 16px;
-    max-height: 210px;
-    object-fit: cover;
-    width: 100%;
-    margin-bottom: 10px;
-    background-color: var(--abu);
+  min-height: 200px !important;
+  border-radius: 16px;
+  max-height: 210px;
+  object-fit: cover;
+  width: 100%;
+  margin-bottom: 10px;
+  background-color: var(--abu);
 }
 
 section:nth-child(2) .roadmap .perRoadmap h2 {
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 30px;
-    min-height: 60px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  min-height: 60px;
 }
 
 section:nth-child(3) .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 section:nth-child(3) .caption {
-    width: 60%;
-    margin-left: 30px;
+  width: 50%;
+  margin-left: 30px;
 }
 
 section:nth-child(3) .caption .perFitur {
-    display: flex;
-    align-items: center;
-    margin: 10px 0;
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
 }
 
 section:nth-child(3) .caption p {
-    font-size: 1.1rem;
+  font-size: 1.1rem;
 }
 
 section:nth-child(3) .caption .icon {
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    display: flex;
-    color: var(--putih);
-    font-size: .7rem;
-    margin-right: 10px;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--hijau);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  color: var(--putih);
+  font-size: 0.7rem;
+  margin-right: 10px;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--hijau);
 }
 
 section:nth-child(3) img {
-    width: 40%;
-    height: 350px;
-    object-fit: cover;
-    border-radius: 1rem;
-    background-color: var(--abu);
-
+  width: 50%;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 1rem;
+  background-color: var(--abu);
 }
-
-
 
 section:nth-child(4) .keunggulan,
 section:nth-child(4) .title {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 section:nth-child(4) .keunggulan {
-    flex-wrap: wrap;
-    margin-top: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
 }
 
-
-
 section:nth-child(4) .keunggulan .perKeunggulan {
-    width: calc(90%/ 2);
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: calc(90% / 2);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 section:nth-child(4) .keunggulan .perKeunggulan img {
-    margin-right: 30px;
+  margin-right: 30px;
 }
 
 section:nth-child(4) .keunggulan .perKeunggulan .caption h2 {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
-
-
-
-
-
 
 section:nth-child(5) .title {
-    text-align: center;
+  text-align: center;
 }
-
 
 @keyframes moveSlideshowToLeft {
-    0% {
-        transform: translateX(0)
-    }
+  0% {
+    transform: translateX(0);
+  }
 
-    to {
-        transform: translateX(-100%)
-    }
+  to {
+    transform: translateX(-100%);
+  }
 }
 
-
 @keyframes moveSlideshowToRight {
-    0% {
-        transform: translateX(0)
-    }
+  0% {
+    transform: translateX(0);
+  }
 
-    to {
-        transform: translateX(100%)
-    }
+  to {
+    transform: translateX(100%);
+  }
 }
 
 .stack {
-    display: flex;
-    flex-direction: row;
-    height: auto;
-    overflow: hidden;
-    position: relative;
-    row-gap: 30px;
-    transform: translateZ(0);
-    width: 100%;
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  row-gap: 30px;
+  transform: translateZ(0);
+  width: 100%;
 }
 
 .stack:hover .stackRow1,
 .stack:hover .stackRow2 {
-    animation-play-state: paused;
-    ;
+  animation-play-state: paused;
 }
 
 .stack:first-child {
-    justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 .stack .stackRow1,
 .stack .stackRow2 {
-    animation: 25s linear infinite;
-    display: flex;
-    height: 100%;
-    transform: translateZ(0);
+  animation: 25s linear infinite;
+  display: flex;
+  height: 100%;
+  transform: translateZ(0);
 }
 
 .stack .stackRow1 {
-    animation-name: moveSlideshowToRight;
+  animation-name: moveSlideshowToRight;
 }
 
 .stack .stackRow1 .perStack {
-    margin-right: 30px;
+  margin-right: 30px;
 }
 
 .stack .stackRow2 {
-    animation-name: moveSlideshowToLeft;
+  animation-name: moveSlideshowToLeft;
 }
 
 .stack .stackRow2 .perStack {
-    margin-left: 30px;
+  margin-left: 30px;
 }
 
 .stack .perStack {
-    min-width: 288px;
-    align-items: center;
-    background-color: var(--putih);
-    border: 0;
-    border-radius: 16px;
-    display: flex;
-    flex-direction: row;
-    gap: 16px;
-    padding: 20px;
-    position: relative;
-    transition: all .3s ease-in-out;
-    border: 1px solid var(--putih);
+  min-width: 288px;
+  align-items: center;
+  background-color: var(--putih);
+  border: 0;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  padding: 20px;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid var(--putih);
 }
 
 .stack .perStack:hover {
-    border: 1px solid var(--biru-cerah);
+  border: 1px solid var(--biru-cerah);
 }
 
 .stack .perStack img {
-    margin-right: 20px;
-    height: auto;
-    max-height: 70px;
-    max-width: 70px;
-    width: 100%;
+  margin-right: 20px;
+  height: auto;
+  max-height: 70px;
+  max-width: 70px;
+  width: 100%;
 }
 
 .stack .perStack .caption h3 {
-    font-size: 1.2rem;
-    font-weight: 700;
-    line-height: 2rem;
-    margin: 0;
-    text-transform: capitalize;
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 2rem;
+  margin: 0;
+  text-transform: capitalize;
 }
 
 .stack .perStack .caption p {
-    color: #79797a;
-    font-size: .9rem;
-    font-weight: 500;
-    margin: 4px 0 0;
+  color: #79797a;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin: 4px 0 0;
 }
 
 .stack .perStack,
 .stack .perStack .caption p {
-    width: max-content;
+  width: max-content;
 }
-
-
-
-
 
 .faqSection .title {
-    text-align: center;
+  text-align: center;
 }
 
-
 .faqSection .FAQ {
-    display: flex;
-    height: 100%;
-    overflow-anchor: none;
+  display: flex;
+  height: 100%;
+  overflow-anchor: none;
 }
 
 .faqSection .FAQ .kanan,
 .faqSection .FAQ .kiri {
-    height: 100%;
+  height: 100%;
 }
 
 .faqSection .FAQ .kiri {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 
 .faqSection .FAQ .perFAQ {
-    width: 100%;
-    margin-top: 20px;
-    border-radius: 1rem;
-    border: 2px solid var(--abu);
-    height: 70px;
-    overflow-y: hidden;
-    cursor: pointer;
-
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 1rem;
+  border: 2px solid var(--abu);
+  height: 70px;
+  overflow-y: hidden;
+  cursor: pointer;
 }
 
 .faqSection .FAQ .perFAQ h2 {
-    font-size: 1.2rem;
-    font-weight: 600;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: var(--putih);
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--putih);
 }
 
 .faqSection .FAQ .perFAQ h2 .icon {
-    transition: .5s ease-in;
+  transition: 0.5s ease-in;
 }
 
 .faqSection .FAQ .perFAQ h2 .icon.active {
-    transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .faqSection .FAQ .perFAQ p {
-    padding: 20px;
-    padding-top: 10px;
-    transition: .5s ease-out;
+  padding: 20px;
+  padding-top: 10px;
+  transition: 0.5s ease-out;
 }
 
 .faqSection .FAQ .perFAQ.isActive {
-    overflow-y: visible;
-    cursor: default;
-    height: 100%;
+  overflow-y: visible;
+  cursor: default;
+  height: 100%;
 }
 
 .faqSection .FAQ .perFAQ.isActive h2 {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .faqSection .FAQ .perFAQ.isActive p {
-    transition: .5s ease-out;
-    transform: translateY(0);
+  transition: 0.5s ease-out;
+  transform: translateY(0);
 }
-
 
 @keyframes move {
-    0% {
-        top: 70px
-    }
+  0% {
+    top: 70px;
+  }
 
-    50% {
-        top: -55px
-    }
+  50% {
+    top: -55px;
+  }
 
-    to {
-        top: 70px
-    }
+  to {
+    top: 70px;
+  }
 }
-
 
 @keyframes move-down {
-    0% {
-        bottom: 70px
-    }
+  0% {
+    bottom: 70px;
+  }
 
-    50% {
-        bottom: -55px
-    }
+  50% {
+    bottom: -55px;
+  }
 
-    to {
-        bottom: 70px
-    }
+  to {
+    bottom: 70px;
+  }
 }
 
-
 .testimonialContainer {
-    background-color: #181230;
-    height: 600px;
-    overflow: hidden;
+  background-color: #181230;
+  height: 600px;
+  overflow: hidden;
 }
 
 .testimonialContainer .caption {
-    width: 40%;
-    margin-right: 20px;
+  width: 40%;
+  margin-right: 20px;
 }
 
 .testimonialContainer img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: var(--border-color);
-    object-fit: cover;
-    margin-right: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--border-color);
+  object-fit: cover;
+  margin-right: 10px;
 }
 
-
-
 .testimonialContainer .caption h1 {
-    font-size: 46px;
-    font-weight: 700;
-    line-height: 69px !important;
-    color: var(--putih);
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 69px !important;
+  color: var(--putih);
 }
 
 .testimonialContainer .caption p {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 32px;
-    margin-bottom: 40px;
-    margin-top: 20px;
-    color: var(--putih);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+  margin-bottom: 40px;
+  margin-top: 20px;
+  color: var(--putih);
 }
 
-
-
 .testimonialContainer .testimonial {
-    width: 60%;
+  width: 60%;
 }
 
 .testimonialContainer .testimonial .testimoni {
-    /* overflow-y: scroll; */
-    position: relative;
+  position: relative;
 }
 
 .testimonialContainer .testimonial .testimoni:first-child {
-    animation: move 15s ease-in infinite;
-    top: 50px;
+  animation: move 15s ease-in infinite;
+  top: 50px;
 }
 
 .testimonialContainer .testimonial .testimoni:last-child {
-    animation: move-down 15s ease-in infinite;
-    bottom: 50px;
+  animation: move-down 15s ease-in infinite;
+  bottom: 50px;
 }
 
 .testimonialContainer .testimonial .testimoni .perTestimoni {
-    padding: 20px;
-    width: 300px;
-    border-radius: 1rem;
-    border: 1px solid var(--border-color);
-    background-color: var(--putih);
-    margin: 15px;
+  padding: 20px;
+  width: 300px;
+  border-radius: 1rem;
+  border: 1px solid var(--border-color);
+  background-color: var(--putih);
+  margin: 15px;
 }
 
 .testimonialContainer .testimonial .testimoni .perTestimoni h2 {
-    font-size: 1.1rem;
-    font-weight: 700;
-    line-height: 2rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  line-height: 2rem;
 }
 
 .testimonialContainer .testimonial .testimoni .perTestimoni p {
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5rem;
-    margin-bottom: 20px;
-    margin-top: 10px;
-    /* width: max-content; */
-    text-align: left !important;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  /* width: max-content; */
+  text-align: left !important;
 }
 
-.testimonialContainer .testimonial .testimoni .perTestimoni .profil .infoUser h3 {
-    font-size: .9rem;
-    font-weight: 700;
-    line-height: 18px;
+.testimonialContainer
+  .testimonial
+  .testimoni
+  .perTestimoni
+  .profil
+  .infoUser
+  h3 {
+  font-size: 0.9rem;
+  font-weight: 700;
+  line-height: 18px;
 }
 
-.testimonialContainer .testimonial .testimoni .perTestimoni .profil .infoUser span {
-    color: #79797a;
-    font-size: .9rem;
-    font-weight: 500;
-    line-height: 18px;
+.testimonialContainer
+  .testimonial
+  .testimoni
+  .perTestimoni
+  .profil
+  .infoUser
+  span {
+  color: #79797a;
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 18px;
 }
-
-
 
 .perArtikel {
-    width: calc(90%/3);
-    height: 450px;
-    margin: 10px;
+  width: calc(90% / 3);
+  height: 450px;
+  margin: 10px;
 }
 
 .perArtikel .img span,
 .perArtikel .date span {
-    padding: 5px 15px;
-    border-radius: 1rem;
-    font-size: .7rem;
-    font-weight: 500;
-    color: var(--putih);
-    background-color: #4256ac;
+  padding: 5px 15px;
+  border-radius: 1rem;
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: var(--putih);
+  background-color: #4256ac;
 }
 
 .perArtikel .img {
-    height: 200px;
-    position: relative;
-    margin-bottom: 20px;
+  height: 200px;
+  position: relative;
+  margin-bottom: 20px;
 }
 
 .perArtikel img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    background-color: var(--border-color);
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-color: var(--border-color);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .perArtikel .img span {
-    position: absolute;
-    top: 10px;
-    right: 5px;
-    font-size: .9rem;
+  position: absolute;
+  top: 10px;
+  right: 5px;
+  font-size: 0.9rem;
 }
 
 .perArtikel h2,
 .perArtikel p {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
 }
 
 .perArtikel h2 {
-    -webkit-line-clamp: 2;
+  -webkit-line-clamp: 2;
 }
 
 .perArtikel p {
-    -webkit-line-clamp: 3;
+  -webkit-line-clamp: 3;
 }
 
 .perArtikel h2 {
-    font-size: 1.2rem;
-    font-weight: 700;
-    line-height: 2rem;
-    padding: 10px;
-    margin-top: 10px;
-    margin-bottom: 5px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 2rem;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 5px;
 }
 
 .perArtikel p {
-    font-size: .9rem;
-    color: #79797a;
-    padding: 0 10px;
+  font-size: 0.9rem;
+  color: #79797a;
+  padding: 0 10px;
 }
