@@ -12,6 +12,18 @@
     max-width: 1340px;
   }
 
+  .techStack {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  header {
+    width: 100%;
+    min-height: 8vh;
+    max-height: 100%;
+  }
+
   header .container {
     max-width: 1740px;
   }
@@ -65,6 +77,31 @@
     flex: 1 1 15rem;
     margin: 10px;
   }
+
+  .keunggulanContainer .keunggulan .perKeunggulan {
+    padding: 0px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .keunggulanContainer .keunggulan .perKeunggulan img {
+    align-self: self-start;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .keunggulanContainer .keunggulan .perKeunggulan .caption h2 {
+    margin-bottom: 0px;
+    font-size: 1.4rem;
+  }
+  .keunggulanContainer .keunggulan .perKeunggulan .caption p {
+    font-size: 0.9rem;
+  }
+
+  .courses .perCourses {
+    width: calc(95% / 2);
+    margin: 20px 7px;
+  }
 }
 @media (max-width: 1000px) {
   article,
@@ -73,6 +110,58 @@
   section,
   .containerKerjasama .container {
     padding: 0 50px;
+  }
+
+  .testimonialContainer {
+    height: 1000px;
+  }
+
+  .testimonialContainer .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .testimonialContainer .caption {
+    width: 80%;
+    margin-right: 0;
+    margin-bottom: 70px;
+  }
+
+  .testimonialContainer .caption h1 {
+    font-size: 2.9rem;
+    line-height: 4rem !important;
+  }
+
+  .testimonialContainer .caption p {
+    font-size: 1.1rem;
+    line-height: 1.7rem;
+    margin-bottom: 25px;
+  }
+
+  .testimonialContainer .testimonial {
+    width: 80%;
+  }
+
+  .perArtikel .img {
+    height: 150px;
+    margin-bottom: 0;
+  }
+
+  .perArtikel .img span {
+    padding: 5px 10px;
+    font-size: 0.7rem;
+  }
+
+  .perArtikel h2 {
+    line-height: 1.7rem;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+
+  .perArtikel p {
+    padding: 0;
   }
 
   footer .container {
@@ -312,6 +401,19 @@
   header .logo {
     margin-right: 0;
   }
+
+  .artikelHome {
+    flex-wrap: wrap;
+  }
+
+  .perArtikel {
+    width: calc(90% / 2);
+  }
+
+  .perArtikel .img {
+    height: 200px;
+    margin-bottom: 0;
+  }
 }
 
 @media (max-width: 800px) {
@@ -320,13 +422,21 @@
     font-size: 1.2rem;
   }
 
-  .merchantBox .perMerchant {
-    width: calc(90% / 3);
-    padding: 10px 5px;
+  .courses .perCourses {
+    /* width: 70%; */
+    margin: 20px 5px;
   }
 
-  .merchantBox img {
-    max-height: 100%;
+  .artikelHomeContainer .container {
+    margin: 50px 0;
+  }
+
+  .testimonialContainer .caption {
+    width: 100%;
+  }
+
+  .testimonialContainer .testimonial {
+    width: 100%;
   }
 
   .containerClient {
@@ -519,6 +629,56 @@
     width: 100%;
   }
 
+  .keunggulanContainer .keunggulan .perKeunggulan img {
+    width: 80px;
+  }
+
+  .keunggulanContainer .keunggulan .perKeunggulan .caption h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0px;
+  }
+  .keunggulanContainer .keunggulan .perKeunggulan .caption p {
+    font-size: 0.8rem;
+  }
+
+  .title p,
+  .header-primary {
+    text-align: center;
+  }
+
+  .courses .perCourses {
+    width: 90%;
+  }
+
+  .testimonialContainer {
+    height: 100%;
+  }
+
+  .testimonialContainer .caption {
+    margin-bottom: 0;
+  }
+
+  .testimonialContainer .caption h1 {
+    font-size: 2.5rem;
+    line-height: 3.3rem !important;
+  }
+
+  .testimonialContainer .caption p {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    margin-bottom: 2.5rem;
+    margin-top: 20px;
+  }
+
+  .testimonialContainer .testimonial {
+    width: 0;
+    display: none;
+  }
+
+  .perArtikel .img {
+    height: 150px;
+  }
+
   /* Event */
   .heroEvent .container h1 {
     font-size: 1.9rem;
@@ -619,6 +779,58 @@
   /* Per Artikel */
 }
 
+@media (max-width: 600px) {
+  .header-primary {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .keunggulanContainer .keunggulan {
+    width: 100px;
+  }
+
+  .keunggulanContainer .keunggulan .perKeunggulan {
+    flex-wrap: wrap;
+    /* width: 100%; */
+    background-color: red;
+    display: inline;
+    width: calc(90% / 9);
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .keunggulanContainer .keunggulan .perKeunggulan img {
+    width: 80px;
+  }
+
+  /* .keunggulanContainer .keunggulan .perKeunggulan .caption h2 {
+    font-size: 10rem;
+    margin-bottom: 0px;
+  }
+  .keunggulanContainer .keunggulan .perKeunggulan .caption p {
+    font-size: 0.8rem;
+  } */
+
+  .perArtikel {
+    width: 100%;
+    margin: 20px 0;
+  }
+  .perArtikel .img {
+    height: 250px;
+    margin-bottom: 0;
+  }
+
+  .perArtikel .img span {
+    padding: 5px 15px;
+    font-size: 0.9rem;
+  }
+
+  .perArtikel h2 {
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+}
 @media (max-width: 550px) {
   .footer .container {
     flex-wrap: wrap;
@@ -646,9 +858,6 @@
     font-size: 0.95rem;
     padding: 0 0;
     margin-bottom: 20px;
-  }
-
-  .footer .box p span {
   }
 
   .footer .box a {
@@ -690,7 +899,6 @@
   header,
   section,
   footer,
-  .title,
   .footer,
   .containerKerjasama {
     padding: 0 15px;
@@ -735,6 +943,64 @@
 
   .hero .caption p {
     font-size: 1.1rem;
+  }
+
+  .stack .stackRow1 .perStack {
+    margin-right: 10px;
+  }
+
+  .stack .stackRow2 .perStack {
+    margin-left: 10px;
+  }
+
+  .stack .perStack {
+    min-width: 188px;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .stack .perStack img {
+    margin-right: 5px;
+    max-height: 30px;
+    max-width: 30px;
+  }
+
+  .stack .perStack .caption h3 {
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+  }
+
+  .stack .perStack .caption p {
+    font-size: 0.75rem;
+    margin: 2px 0 0;
+  }
+
+  .courses .perCourses {
+    width: 100%;
+  }
+
+  .artikelHomeContainer .container {
+    margin-top: 25px;
+  }
+
+  .testimonialContainer .caption h1 {
+    font-size: 2rem;
+    line-height: 3rem !important;
+  }
+
+  .testimonialContainer .caption p {
+    font-size: 1rem;
+    line-height: 1.7rem;
+    margin-bottom: 2rem;
+  }
+
+  .perArtikel .img {
+    height: 200px;
+  }
+
+  .perArtikel h2 {
+    font-size: 1.3rem;
+    line-height: 1.9rem;
   }
 
   .footer .container {
@@ -874,6 +1140,46 @@
 
   .hero .caption a {
     font-size: 0.9rem;
+  }
+
+  .header-primary {
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+  }
+
+  .testimonialContainer .container {
+    padding: 25px 0;
+  }
+  .artikelHomeContainer .container {
+    margin-top: 10px;
+  }
+  .testimonialContainer .caption h1 {
+    font-size: 1.7rem;
+    line-height: 2.5rem !important;
+  }
+
+  .testimonialContainer .caption p {
+    font-size: 0.95rem;
+    line-height: 1.7rem;
+    margin-bottom: 20px;
+  }
+
+  .testimonialContainer .caption a {
+    font-size: 0.8rem;
+  }
+
+  .perArtikel .img {
+    height: 170px;
+  }
+
+  .perArtikel .img span {
+    padding: 5px 10px;
+    font-size: 0.7rem;
+  }
+
+  .perArtikel h2 {
+    font-size: 1.2rem;
+    line-height: 1.7rem;
   }
 
   .containerKerjasama .container .caption h2,
@@ -1043,5 +1349,17 @@
   footer p,
   footer p span {
     font-size: 15px;
+  }
+
+  .perArtikel .img {
+    height: 130px;
+  }
+
+  .perArtikel h2 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .perArtikel p {
+    font-size: 0.8rem;
   }
 }

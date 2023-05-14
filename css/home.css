@@ -133,11 +133,12 @@ section:nth-child(3) img {
 section:nth-child(4) .keunggulan,
 section:nth-child(4) .title {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
 }
 
 section:nth-child(4) .keunggulan {
+  width: 100%;
   flex-wrap: wrap;
   margin-top: 20px;
 }
@@ -262,7 +263,7 @@ section:nth-child(5) .title {
 }
 
 .stack .perStack .caption p {
-  color: #79797a;
+  color: #525252;
   font-size: 0.9rem;
   font-weight: 500;
   margin: 4px 0 0;
@@ -275,70 +276,6 @@ section:nth-child(5) .title {
 
 .faqSection .title {
   text-align: center;
-}
-
-.faqSection .FAQ {
-  display: flex;
-  height: 100%;
-  overflow-anchor: none;
-}
-
-.faqSection .FAQ .kanan,
-.faqSection .FAQ .kiri {
-  height: 100%;
-}
-
-.faqSection .FAQ .kiri {
-  margin-right: 20px;
-}
-
-.faqSection .FAQ .perFAQ {
-  width: 100%;
-  margin-top: 20px;
-  border-radius: 1rem;
-  border: 2px solid var(--abu);
-  height: 70px;
-  overflow-y: hidden;
-  cursor: pointer;
-}
-
-.faqSection .FAQ .perFAQ h2 {
-  font-size: 1.2rem;
-  font-weight: 600;
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: var(--putih);
-}
-
-.faqSection .FAQ .perFAQ h2 .icon {
-  transition: 0.5s ease-in;
-}
-
-.faqSection .FAQ .perFAQ h2 .icon.active {
-  transform: rotate(180deg);
-}
-
-.faqSection .FAQ .perFAQ p {
-  padding: 20px;
-  padding-top: 10px;
-  transition: 0.5s ease-out;
-}
-
-.faqSection .FAQ .perFAQ.isActive {
-  overflow-y: visible;
-  cursor: default;
-  height: 100%;
-}
-
-.faqSection .FAQ .perFAQ.isActive h2 {
-  cursor: pointer;
-}
-
-.faqSection .FAQ .perFAQ.isActive p {
-  transition: 0.5s ease-out;
-  transform: translateY(0);
 }
 
 @keyframes move {
@@ -467,26 +404,32 @@ section:nth-child(5) .title {
   .profil
   .infoUser
   span {
-  color: #79797a;
+  color: #525252;
   font-size: 0.9rem;
   font-weight: 500;
   line-height: 18px;
 }
 
+.artikel {
+  display: flex;
+}
+
 .perArtikel {
   width: calc(90% / 3);
-  height: 450px;
+  height: 100%;
   margin: 10px;
 }
 
-.perArtikel .img span,
-.perArtikel .date span {
+.perArtikel .img span {
   padding: 5px 15px;
   border-radius: 1rem;
-  font-size: 0.7rem;
   font-weight: 500;
   color: var(--putih);
-  background-color: #4256ac;
+  background-color: var(--ungu);
+  position: absolute;
+  top: 10px;
+  right: 5px;
+  font-size: 0.9rem;
 }
 
 .perArtikel .img {
@@ -502,13 +445,6 @@ section:nth-child(5) .title {
   background-color: var(--border-color);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-}
-
-.perArtikel .img span {
-  position: absolute;
-  top: 10px;
-  right: 5px;
-  font-size: 0.9rem;
 }
 
 .perArtikel h2,
@@ -538,6 +474,6 @@ section:nth-child(5) .title {
 
 .perArtikel p {
   font-size: 0.9rem;
-  color: #79797a;
+  color: #525252;
   padding: 0 10px;
 }

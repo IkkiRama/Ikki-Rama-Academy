@@ -8,7 +8,7 @@
   --yellow-collor: #fab006;
   --biru-cerah: #1352ff;
   --ungu: #496ddb;
-  --hijau: #47bb8e;
+  --hijau: #1ee592;
   --abu: #e8edf4;
   --border-color: #999aa4;
   --border-color-2: #e4e4e7;
@@ -40,7 +40,7 @@
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: #4846dd;
+  background-color: var(--primary-color);
   border-radius: 5px;
 }
 
@@ -290,7 +290,7 @@ section {
 }
 
 .btn-white:focus {
-  outline: 2px solid #108ee9;
+  outline: 2px solid var(--primary-color);
 }
 
 .btn-dark {
@@ -308,12 +308,12 @@ section {
 }
 
 .btn-success {
-  background-color: #1ee592;
+  background-color: var(--hijau);
   border-color: #1ee592;
 }
 
 .btn-success:hover {
-  background-color: #19cf84;
+  background-color: var(--hijau);
 }
 
 .btn-success:focus {
@@ -349,7 +349,6 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* background: linear-gradient(to right, #108ee9, #3ca0e7); */
   box-shadow: 0 0.6rem 1.3rem rgba(0, 0, 0, 0.1);
   z-index: 99999999999999999999999999;
   backdrop-filter: blur(1rem);
@@ -902,7 +901,7 @@ footer p span {
   bottom: 0;
   box-shadow: 0 0.07rem 0.18rem 0 rgb(0 0 0 13%);
   cursor: pointer;
-  color: #108ee9;
+  color: var(--primary-color);
   font-size: 0.94rem;
   position: fixed;
   right: 1rem;
@@ -922,7 +921,7 @@ footer p span {
 }
 
 .toTop p {
-  color: #108ee9;
+  color: var(--primary-color);
   font-weight: 500;
   line-height: 1.25;
   padding: 0.08rem 0.11rem 0.08rem 0.04rem;
@@ -933,9 +932,6 @@ footer p span {
   color: var(--hijau) !important;
   font-size: 1.1rem;
   font-weight: 500;
-}
-
-.title .sub-header-primary {
 }
 
 .header-primary {
@@ -979,7 +975,7 @@ footer p span {
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 1;
+  -webkit-line-clamp: 2;
 }
 
 .courses .perCourses p {
@@ -1012,7 +1008,7 @@ footer p span {
 }
 
 .courses .perCourses .infoCourses .perInfoCourses span {
-  font-size: 0.875rem;
+  font-size: 0.8rem;
   margin-left: 0.5rem;
   color: #4256ac;
   font-weight: 600;
