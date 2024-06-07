@@ -94,6 +94,7 @@
     margin-bottom: 0px;
     font-size: 1.4rem;
   }
+
   .keunggulanContainer .keunggulan .perKeunggulan .caption p {
     font-size: 0.9rem;
   }
@@ -103,7 +104,9 @@
     margin: 20px 7px;
   }
 }
+
 @media (max-width: 1000px) {
+
   article,
   header,
   article,
@@ -111,6 +114,68 @@
   .containerKerjasama .container {
     padding: 0 50px;
   }
+
+  /* Home */
+
+  .Mainbanner h1 {
+    font-size: 4.0rem;
+  }
+
+  .Mainbanner .caption {
+    width: 90%;
+  }
+
+  .Mainbanner p {
+    font-size: 1.2rem;
+  }
+
+  .roadmap {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .roadmap .perRoadmap {
+    margin: 10px;
+    width: calc(90% / 2);
+  }
+
+  .fasilitas .container {
+    margin-top: 50px;
+  }
+
+  .fasilitas .caption {
+    width: 60%;
+    margin-left: 20px;
+  }
+
+  .fasilitas .caption h1 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    margin-bottom: 20px;
+  }
+
+  .fasilitas .caption p {
+    font-size: 1rem;
+  }
+
+  .fasilitas .caption .icon {
+    width: 25px;
+    height: 25px;
+  }
+
+  .fasilitas img {
+    width: 40%;
+    height: 350px;
+  }
+
+  .faqSection .FAQ .perFAQ {
+    width: 100%;
+  }
+
+  .faqSection .FAQ .perFAQ h2 {
+    font-size: 1rem;
+  }
+
 
   .testimonialContainer {
     height: 1000px;
@@ -204,13 +269,7 @@
     font-size: 0.9rem;
   }
 
-  .Event
-    .container
-    .program
-    .masihBerlangsung
-    .perMasihBerlangsung
-    .btn
-    button {
+  .Event .container .program .masihBerlangsung .perMasihBerlangsung .btn button {
     font-size: 0.9rem;
   }
 
@@ -226,11 +285,13 @@
 }
 
 @media (max-width: 900px) {
+
   article,
   header,
   section {
     padding: 0 25px;
   }
+
   .hero img {
     width: 50%;
   }
@@ -268,13 +329,7 @@
     margin: 10px 0;
   }
 
-  .Event
-    .container
-    .program
-    .masihBerlangsung
-    .perMasihBerlangsung
-    .btn
-    button {
+  .Event .container .program .masihBerlangsung .perMasihBerlangsung .btn button {
     font-size: 1rem;
     padding: 12px;
   }
@@ -417,6 +472,41 @@
 }
 
 @media (max-width: 800px) {
+  .roadmap .perRoadmap img {
+    height: 170px !important;
+  }
+
+  .fasilitas .container {
+    margin-top: 25px;
+  }
+
+  .fasilitas .caption {
+    margin-left: 15px;
+  }
+
+  .fasilitas .caption button {
+    font-size: .9rem;
+    margin-top: 20px;
+  }
+
+  .fasilitas .caption h1 {
+    font-size: 1.7rem;
+    line-height: 2.3rem;
+  }
+
+  .fasilitas .caption p {
+    font-size: .95rem;
+  }
+
+  .fasilitas .caption .icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .fasilitas img {
+    height: 300px;
+  }
+
   .title {
     padding: 30px 0 0 0;
     font-size: 1.2rem;
@@ -568,6 +658,56 @@
 }
 
 @media (max-width: 700px) {
+  .roadmap .perRoadmap img {
+    height: 150px !important;
+  }
+
+  .roadmap .perRoadmap h2 {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .roadmap .perRoadmap p {
+    font-size: .9rem;
+    margin-top: 5px;
+  }
+
+  .fasilitas .container {
+    flex-wrap: wrap;
+    margin-top: 50px;
+  }
+
+  .fasilitas .caption {
+    width: 80%;
+    margin-left: 0;
+  }
+
+  .fasilitas .caption button {
+    font-size: 1rem;
+    /* margin-top: 20px; */
+  }
+
+  .fasilitas .caption h1 {
+    text-align: left;
+    /* font-size: 2; */
+    /* line-height: 2.3rem; */
+  }
+
+  .fasilitas .caption p {
+    font-size: 1rem;
+    text-align: left;
+  }
+
+  .fasilitas .caption .icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .fasilitas img {
+    width: 80%;
+    height: 400px;
+  }
+
   .toTop {
     bottom: 1.16rem;
   }
@@ -637,6 +777,7 @@
     font-size: 1.2rem;
     margin-bottom: 0px;
   }
+
   .keunggulanContainer .keunggulan .perKeunggulan .caption p {
     font-size: 0.8rem;
   }
@@ -648,6 +789,7 @@
 
   .courses .perCourses {
     width: 90%;
+    margin: 10px 0;
   }
 
   .testimonialContainer {
@@ -779,43 +921,89 @@
   /* Per Artikel */
 }
 
+@media (max-width: 650px) {
+  .Mainbanner h1 {
+    font-size: 3.0rem;
+  }
+
+  .Mainbanner .caption {
+    width: 100%;
+  }
+
+  .Mainbanner p {
+    font-size: 1.1rem;
+  }
+
+  .faqSection .FAQ .perFAQ {
+    height: 80px;
+
+  }
+
+  .faqSection .FAQ .perFAQ h2 {
+    height: 80px;
+  }
+
+}
+
 @media (max-width: 600px) {
+
+  .fasilitas .caption {
+    width: 100%;
+  }
+
+  .fasilitas img {
+    width: 100%;
+    height: 300px;
+  }
+
+
   .header-primary {
     font-size: 1.5rem;
     line-height: 2rem;
   }
 
   .keunggulanContainer .keunggulan {
-    width: 100px;
+    flex-direction: column;
   }
 
   .keunggulanContainer .keunggulan .perKeunggulan {
-    flex-wrap: wrap;
-    /* width: 100%; */
-    background-color: red;
-    display: inline;
-    width: calc(90% / 9);
-    padding: 20px;
-    align-items: center;
-    justify-content: center;
+    width: 100% !important;
   }
 
   .keunggulanContainer .keunggulan .perKeunggulan img {
     width: 80px;
   }
 
-  /* .keunggulanContainer .keunggulan .perKeunggulan .caption h2 {
-    font-size: 10rem;
-    margin-bottom: 0px;
+  .keunggulanContainer .keunggulan .perKeunggulan .caption h2 {
+    font-size: 1.3rem;
   }
+
   .keunggulanContainer .keunggulan .perKeunggulan .caption p {
-    font-size: 0.8rem;
-  } */
+    font-size: 0.9rem;
+  }
+
+  .keunggulanContainer .title {
+    justify-content: center;
+    align-items: center;
+    text-align: center !important;
+  }
+
+  .keunggulanContainer .title .header-primary {
+    text-align: center !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .keunggulanContainer .title .btn {
+    display: none;
+  }
 
   .perArtikel {
     width: 100%;
     margin: 20px 0;
   }
+
   .perArtikel .img {
     height: 250px;
     margin-bottom: 0;
@@ -831,11 +1019,27 @@
     line-height: 2rem;
   }
 }
+
 @media (max-width: 550px) {
+  .roadmap .perRoadmap {
+    margin: 20px 0;
+    width: 80%;
+  }
+
+  .roadmap .perRoadmap img {
+    height: 200px !important;
+  }
+
+  .roadmap .perRoadmap h2 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
   .footer .container {
     flex-wrap: wrap;
     margin-right: 0;
   }
+
   .footer .box {
     width: calc(100% / 2);
     margin: 0.5rem 0;
@@ -864,7 +1068,25 @@
     font-size: 0.95rem;
   }
 }
+
 @media (max-width: 500px) {
+  .Mainbanner img {
+    width: 120px;
+    height: 200px;
+  }
+
+  .Mainbanner h1 {
+    font-size: 2.5rem;
+    line-height: 3.2rem;
+  }
+
+  .Mainbanner p {
+    margin-top: 20px;
+    font-size: 1rem;
+  }
+
+
+
   /* Kontak */
   .kontak .container img {
     height: 20rem;
@@ -1085,7 +1307,81 @@
   /* Artikel */
 }
 
+@media (max-width: 450px) {
+  .Mainbanner .cta {
+    margin-top: 10px;
+  }
+
+  .Mainbanner .cta button {
+    margin: 10px 0;
+    width: 100%;
+  }
+
+  .roadmap {
+    margin-top: 10px;
+  }
+
+  .roadmap .perRoadmap {
+    margin: 15px 0;
+    width: 100%;
+  }
+
+}
+
 @media (max-width: 400px) {
+
+  .Mainbanner h1 {
+    font-size: 2.2rem;
+    line-height: 3rem;
+  }
+
+  .Mainbanner p {
+    margin-top: 10px;
+  }
+
+  .Mainbanner .cta button {
+    font-size: .9rem;
+  }
+
+  .roadmap .perRoadmap {
+    margin: 10px 0;
+  }
+
+  .fasilitas .container {
+    margin-top: 25px;
+  }
+
+  .fasilitas .caption button {
+    font-size: .9rem;
+    margin-top: 15px;
+  }
+
+  .fasilitas .caption h1 {
+    margin-bottom: 15px;
+  }
+
+  .fasilitas .caption p {
+    font-size: .9rem;
+  }
+
+  .fasilitas .caption .icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .fasilitas img {
+    height: 250px;
+  }
+
+  .faqSection .FAQ .perFAQ {
+    height: 90px;
+  }
+
+  .faqSection .FAQ .perFAQ h2 {
+    height: 90px;
+    padding: 0 20px;
+  }
+
   /* Kontak */
   .kontak .container img {
     height: 15rem;
@@ -1144,15 +1440,17 @@
 
   .header-primary {
     font-size: 1.3rem;
-    line-height: 1.5rem;
+    line-height: 2rem;
   }
 
   .testimonialContainer .container {
     padding: 25px 0;
   }
+
   .artikelHomeContainer .container {
     margin-top: 10px;
   }
+
   .testimonialContainer .caption h1 {
     font-size: 1.7rem;
     line-height: 2.5rem !important;
@@ -1345,7 +1643,67 @@
   }
 }
 
+@media (max-width: 350px) {
+  .Mainbanner h1 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  .Mainbanner p {
+    line-height: 1.7rem;
+  }
+
+  .Mainbanner .cta button {
+    font-size: .8rem;
+  }
+
+
+  .roadmap .perRoadmap {
+    margin: 15px 0;
+    width: 100%;
+  }
+
+  .roadmap .perRoadmap img {
+    height: 150px !important;
+  }
+
+  .roadmap .perRoadmap h2 {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .fasilitas .caption button {
+    font-size: .8rem;
+  }
+
+  .fasilitas .caption h1 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .fasilitas img {
+    height: 200px;
+  }
+
+  .courses .perCourses img {
+    height: 170px;
+  }
+
+  .courses .perCourses h2 {
+    font-size: 1.2rem;
+  }
+
+  .courses .perCourses p {
+    font-size: 0.85rem;
+  }
+
+  .courses .perCourses button {
+    font-size: .9rem;
+  }
+}
+
 @media (max-width: 300px) {
+
   footer p,
   footer p span {
     font-size: 15px;
@@ -1359,6 +1717,7 @@
     font-size: 1rem;
     line-height: 1.5rem;
   }
+
   .perArtikel p {
     font-size: 0.8rem;
   }

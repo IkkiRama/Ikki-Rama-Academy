@@ -16,6 +16,7 @@
 }
 
 .Mainbanner h1 {
+  z-index: 99999999999;
   display: flex;
   flex-direction: column;
   font-weight: 500;
@@ -34,9 +35,11 @@
 }
 
 .Mainbanner p {
+  z-index: 99999999999;
   margin-top: 30px;
   font-size: 1.5rem;
 }
+
 
 .Mainbanner img {
   position: absolute;
@@ -60,56 +63,54 @@
   padding: 12px 30px;
 }
 
-section:nth-child(2) .roadmap {
+.roadmap {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-top: 30px;
 }
 
-section:nth-child(2) .roadmap .perRoadmap {
+.roadmap .perRoadmap {
   width: calc(90% / 3);
 }
 
-section:nth-child(2) .roadmap .perRoadmap img {
-  min-height: 200px !important;
+.roadmap .perRoadmap img {
+  height: 200px !important;
   border-radius: 16px;
-  max-height: 210px;
   object-fit: cover;
   width: 100%;
   margin-bottom: 10px;
   background-color: var(--abu);
 }
 
-section:nth-child(2) .roadmap .perRoadmap h2 {
+.roadmap .perRoadmap h2 {
   font-size: 20px;
   font-weight: 700;
   line-height: 30px;
-  min-height: 60px;
 }
 
-section:nth-child(3) .container {
+.fasilitas .container {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-section:nth-child(3) .caption {
+.fasilitas .caption {
   width: 50%;
   margin-left: 30px;
 }
 
-section:nth-child(3) .caption .perFitur {
+.fasilitas .caption .perFitur {
   display: flex;
   align-items: center;
   margin: 10px 0;
 }
 
-section:nth-child(3) .caption p {
+.fasilitas .caption p {
   font-size: 1.1rem;
 }
 
-section:nth-child(3) .caption .icon {
+.fasilitas .caption .icon {
   border-radius: 50%;
   width: 30px;
   height: 30px;
@@ -122,7 +123,7 @@ section:nth-child(3) .caption .icon {
   background-color: var(--hijau);
 }
 
-section:nth-child(3) img {
+.fasilitas img {
   width: 50%;
   height: 450px;
   object-fit: cover;
@@ -130,20 +131,21 @@ section:nth-child(3) img {
   background-color: var(--abu);
 }
 
-section:nth-child(4) .keunggulan,
-section:nth-child(4) .title {
+.keunggulanContainer .keunggulan,
+.keunggulanContainer .title {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
 }
 
-section:nth-child(4) .keunggulan {
+.keunggulanContainer .keunggulan {
   width: 100%;
+  align-items: flex-start;
   flex-wrap: wrap;
   margin-top: 20px;
 }
 
-section:nth-child(4) .keunggulan .perKeunggulan {
+.keunggulanContainer .keunggulan .perKeunggulan {
   width: calc(90% / 2);
   padding: 20px;
   display: flex;
@@ -151,11 +153,11 @@ section:nth-child(4) .keunggulan .perKeunggulan {
   justify-content: center;
 }
 
-section:nth-child(4) .keunggulan .perKeunggulan img {
+.keunggulanContainer .keunggulan .perKeunggulan img {
   margin-right: 30px;
 }
 
-section:nth-child(4) .keunggulan .perKeunggulan .caption h2 {
+.keunggulanContainer .keunggulan .perKeunggulan .caption h2 {
   margin-bottom: 20px;
 }
 
@@ -274,9 +276,63 @@ section:nth-child(5) .title {
   width: max-content;
 }
 
+
+/* FAQ */
 .faqSection .title {
   text-align: center;
 }
+
+.faqSection .FAQ {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.faqSection .FAQ .perFAQ {
+  width: 80%;
+  margin-top: 20px;
+  border-radius: 1rem;
+  border: 2px solid var(--abu);
+  height: 70px;
+  overflow-y: hidden;
+  cursor: pointer;
+}
+
+.faqSection .FAQ .perFAQ h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.faqSection .FAQ .perFAQ h2 .icon {
+  margin-left: 5px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.faqSection .FAQ .perFAQ p {
+  padding: 20px;
+  padding-top: 10px;
+  transform: translateY(100%);
+}
+
+.faqSection .FAQ .perFAQ.isActive {
+  overflow-y: visible;
+  cursor: default;
+  height: 100%;
+}
+
+.faqSection .FAQ .perFAQ.isActive h2 {
+  cursor: pointer;
+}
+
+.faqSection .FAQ .perFAQ.isActive p {
+  transform: translateY(0);
+}
+
 
 @keyframes move {
   0% {
@@ -385,25 +441,13 @@ section:nth-child(5) .title {
   text-align: left !important;
 }
 
-.testimonialContainer
-  .testimonial
-  .testimoni
-  .perTestimoni
-  .profil
-  .infoUser
-  h3 {
+.testimonialContainer .testimonial .testimoni .perTestimoni .profil .infoUser h3 {
   font-size: 0.9rem;
   font-weight: 700;
   line-height: 18px;
 }
 
-.testimonialContainer
-  .testimonial
-  .testimoni
-  .perTestimoni
-  .profil
-  .infoUser
-  span {
+.testimonialContainer .testimonial .testimoni .perTestimoni .profil .infoUser span {
   color: #525252;
   font-size: 0.9rem;
   font-weight: 500;

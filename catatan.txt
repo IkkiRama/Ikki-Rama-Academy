@@ -1,3 +1,6 @@
+Di halaman detailCourses, itu dikasih padding kanan untuk bagian persiapan kelas
+
+
 UI / UX Design
 Frontend Development
 Mathematics

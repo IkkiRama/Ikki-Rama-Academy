@@ -28,7 +28,7 @@
   font-display: sans-serif;
   scroll-behavior: smooth;
   scrollbar-width: auto;
-  scrollbar-color: var(--putih) var(--putih);
+  /* scrollbar-color: var(--putih) var(--putih); */
 }
 
 *::-webkit-scrollbar {
@@ -40,7 +40,7 @@
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: var(--primary-color);
+  background-color: var(--biru-cerah);
   border-radius: 5px;
 }
 
@@ -352,11 +352,9 @@ header {
   box-shadow: 0 0.6rem 1.3rem rgba(0, 0, 0, 0.1);
   z-index: 99999999999999999999999999;
   backdrop-filter: blur(1rem);
-  background: linear-gradient(
-    to right bottom,
-    rgba(255, 255, 255, 0.7),
-    rgba(255, 255, 255, 0.3)
-  );
+  background: linear-gradient(to right bottom,
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.3));
 }
 
 header .container {
@@ -539,15 +537,15 @@ header .kanan .fotoUser {
   cursor: pointer;
 }
 
-.menu input:checked ~ span:nth-child(2) {
+.menu input:checked~span:nth-child(2) {
   transform: rotate(45deg) translate(1px, 6px);
 }
 
-.menu input:checked ~ span:nth-child(3) {
+.menu input:checked~span:nth-child(3) {
   transform: rotate(90deg) scale(0);
 }
 
-.menu input:checked ~ span:nth-child(4) {
+.menu input:checked~span:nth-child(4) {
   width: 100%;
   transform: rotate(-45deg) translate(1px, 2px);
 }
@@ -836,7 +834,7 @@ footer p span {
   font-size: 1.5rem;
 }
 
-.modal .modal-title .icon:hover > * {
+.modal .modal-title .icon:hover>* {
   color: #2b46a6;
   cursor: pointer;
 }
@@ -956,10 +954,9 @@ footer p span {
 }
 
 .courses .perCourses img {
-  min-height: 200px !important;
+  height: 200px;
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
-  max-height: 210px;
   object-fit: cover;
   width: 100%;
   background-color: var(--abu);
