@@ -521,3 +521,47 @@ section:nth-child(5) .title {
   color: #525252;
   padding: 0 10px;
 }
+
+
+
+.testimoniMobile {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.testimoniMobile .perTestimoniMobile {
+  width: calc(95%/2);
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 10px;
+  background-color: var(--putih);
+  box-shadow: 0 0.6rem 1.3rem rgba(0, 0, 0, 0.1);
+}
+
+.testimoniMobile .perTestimoniMobile .intiTestimoni {
+  font-size: .9em;
+  margin-bottom: 15px;
+}
+
+.testimoniMobile .perTestimoniMobile .orang {
+  display: flex;
+  align-items: center;
+}
+
+.testimoniMobile img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.testimoniMobile .perTestimoniMobile .orang .profile h3 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.testimoniMobile .perTestimoniMobile .orang .profile p {
+  font-size: .8rem;
+}

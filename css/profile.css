@@ -1,0 +1,291 @@
+.bg-profil {
+    height: 30vh;
+    background-color: #1352FF;
+}
+
+.bg-profil .container {
+    background-image: url("../img/profil/profile-banner-desktop.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    object-fit: cover;
+}
+
+
+
+.profil {
+    margin-top: -10vh;
+}
+
+.profil .container {
+    display: flex;
+    justify-content: center;
+}
+
+.profil .container .profil-orang,
+.profil .container .content {
+    border: var(--border);
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0.6rem 1.3rem rgba(0, 0, 0, 0.1);
+    margin-bottom: 100px;
+}
+
+.profil .container .profil-orang {
+    width: 30%;
+    height: 100%;
+    padding: 20px;
+    top: 20vh;
+    position: sticky;
+    align-self: flex-start;
+}
+
+.profil .container .profil-orang .icon {
+    top: 10px;
+    right: 10px;
+    padding: 7px 15px;
+    position: absolute;
+    border-radius: 5px;
+    border: 1px solid #e4e4e7;
+}
+
+.profil .container .profil-orang .detail-orang {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: -80px;
+}
+
+.profil .container .profil-orang .detail-orang h2 {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.profil .container .profil-orang .detail-orang img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    margin-bottom: 20px;
+}
+
+.profil .container .profil-orang .detail-orang .email {
+    font-weight: 500;
+    color: #1352FF;
+}
+
+.profil .container .profil-orang .detail-orang .sekolah {
+    color: #6f6f74;
+    font-weight: 500;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+
+.profil .container .profil-orang .detail-orang .pencapaian {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.profil .container .profil-orang .detail-orang .pencapaian .perPencapaian {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.profil .container .profil-orang .detail-orang .pencapaian .perPencapaian p {
+    font-weight: 500;
+}
+
+.profil .container .profil-orang .detail-orang .pencapaian .perPencapaian span {
+    font-weight: 600;
+    color: #ffa011;
+}
+
+.profil .container .profil-orang .detail-orang .tentangSaya {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.profil .container .profil-orang .detail-orang .tentangSaya p {
+    margin-top: 10px;
+    color: #6f6f74;
+}
+
+.profil .container .profil-orang .detail-orang a {
+    margin-top: 30px;
+    width: 100%;
+    font-weight: 600;
+}
+
+.profil .container .content {
+    width: 70%;
+    /* min-height: 300px; */
+    margin-left: 20px;
+}
+
+
+.heading-dashboard {
+    padding: 30px 20px;
+    margin: 20px;
+    background: linear-gradient(66.13deg, #ff4d46 -6.57%, #ce231c 77.79%);
+    border-radius: 10px;
+}
+
+.heading-dashboard h1 {
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 1.33;
+    color: var(--putih);
+}
+
+.heading-dashboard p {
+    font-size: 1rem;
+    margin-top: .5rem;
+    color: var(--putih);
+}
+
+.title-kelas {
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+    justify-content: space-evenly;
+    overflow-x: auto;
+    list-style: none;
+    text-align: center;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    scrollbar-color: var(--putih) var(--putih);
+}
+
+.title-kelas::-webkit-scrollbar {
+    height: 7px;
+}
+
+.title-kelas::-webkit-scrollbar-track {
+    background: var(--putih);
+}
+
+.title-kelas::-webkit-scrollbar-thumb {
+    background-color: #c5c5c5;
+    border-radius: 25px;
+}
+
+.profil-kelas {
+    display: none;
+}
+
+.profil-kelas.active {
+    display: inherit;
+}
+
+.title-kelas li {
+    width: 50%;
+    display: inline-block;
+    padding: 15px;
+    font-size: 1rem;
+    background-color: #ddd;
+    border-radius: 22px;
+    margin: 0 10px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.title-kelas li.active {
+    color: var(--putih);
+    background-color: var(--biru-cerah);
+}
+
+.kelas-bootcamp li {
+    padding: 20px;
+    display: none;
+    flex-direction: column;
+    /* justify-content: center; */
+}
+
+.kelas-bootcamp li.active {
+    display: flex;
+}
+
+.kelas-bootcamp li .perKelas {
+    padding: 20px;
+    margin: 10px 0;
+    background-color: var(--putih);
+    box-shadow: 0 0.6rem 1.3rem rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+
+.menuProfile {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+
+.menuProfile .perMenuProfile.active {
+    background-color: var(--biru-cerah);
+}
+
+.menuProfile .perMenuProfile {
+    margin: 0;
+    width: 100%;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.menuProfile .perMenuProfile span {
+    margin-left: 20px;
+}
+
+.menuProfile .perMenuProfile.active,
+.menuProfile .perMenuProfile.active span {
+    color: var(--putih);
+}
+
+
+
+.transaksi h1 {
+    padding: 20px;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.transaksi form {
+    padding: 20px;
+}
+
+.transaksi form button {
+    width: inherit;
+}
+
+
+
+.kelas-bootcamp li .kelasKosong {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.kelas-bootcamp li .kelasKosong h1 {
+    font-size: 1.5rem;
+    color: #fa3f52;
+    font-weight: 600;
+    margin: 20px 0 10px 0;
+}
+
+.kelas-bootcamp li .kelasKosong p {
+    width: 80%;
+    font-weight: 500;
+    line-height: 1.7rem;
+}

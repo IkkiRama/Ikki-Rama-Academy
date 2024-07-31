@@ -11,7 +11,13 @@
   --hijau: #1ee592;
   --abu: #e8edf4;
   --border-color: #999aa4;
+  --hitam-santai: #302f2f;
   --border-color-2: #e4e4e7;
+
+
+  --border-table: 1px solid #dee2e6;
+  --table-dark: #343a40;
+  --tr: rgba(0, 0, 0, 0.05);
 }
 
 *,
@@ -339,6 +345,59 @@ section {
   height: 100%;
 }
 
+
+.table-strip-bawah {
+  border: 0;
+}
+
+.table-strip-bawah th {
+  color: inherit;
+  padding: 0.75rem;
+  background-color: inherit;
+}
+
+.table-strip-bawah td {
+  padding: 0.75rem;
+  border: 0;
+  border-bottom: var(--border-table);
+}
+
+.table-strip-bawah img {
+  width: 100px;
+  height: 100px;
+}
+
+.table-strip-bawah tbody tr:nth-child(odd) {
+  background-color: var(--putih);
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid var(--hitam-santai);
+}
+
+table thead th {
+  color: var(--putih);
+  padding: 0.75rem;
+  background-color: var(--table-dark);
+  border-bottom: var(--border-table);
+}
+
+table tbody tr td {
+  padding: 0.75rem;
+  border: var(--border-table);
+}
+
+table tbody tr:hover,
+table tbody tr:nth-child(odd) {
+  background-color: var(--tr);
+}
+
+
+
+
 header {
   width: 100%;
   z-index: 1000;
@@ -398,6 +457,7 @@ header nav ul li a {
 
 header nav ul li a.active {
   opacity: 1;
+  color: var(--biru-cerah);
 }
 
 header nav ul li a:hover {
@@ -407,7 +467,7 @@ header nav ul li a:hover {
 
 header .kanan {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
 }
 
@@ -452,9 +512,15 @@ header .kanan .search {
   margin: 0 10px;
 }
 
+header .kanan .keranjang img {
+  width: 100%;
+  height: 100%;
+
+}
+
 header .kanan .fotoUser {
-  width: 45px;
-  height: 45px;
+  width: 40px;
+  height: 40px;
   cursor: pointer;
   object-fit: cover;
   border-radius: 50%;
@@ -462,38 +528,57 @@ header .kanan .fotoUser {
   background-color: #cfcfdb;
 }
 
-.navMobile {
-  width: 40%;
-  height: 100vh;
-  background-color: var(--primary-color);
-  position: fixed;
-  z-index: 999;
-  padding-top: 15vh;
-  transition: ease-in-out 0.3s;
-  transform: translateX(-120%);
-  display: none;
-}
-
-.navMobile.active {
-  transform: translateX(0);
-}
-
-.navMobile ul li {
-  display: flex;
-}
-
-.navMobile ul li a {
+.navbarMobile {
   width: 100%;
-  padding: 10px 10px 10px 20px;
-  color: #fff;
-  font-weight: 500;
+  height: 60px;
+  position: fixed;
+  bottom: 0;
+  display: none;
+  background-color: #fff;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  box-shadow: 1rem 1rem 1rem 10px rgba(0, 0, 0, 0.226);
+  z-index: 99999999999999;
 }
 
-.navMobile ul li a.active,
-.navMobile ul li a:hover {
-  color: #302f2f;
-  background-color: #fff;
+.navbarMobile .perNavbarMobile.active {
+  color: var(--putih);
+  background-color: var(--biru-cerah);
 }
+
+.navbarMobile .perNavbarMobile.active h3 {
+  color: var(--putih);
+}
+
+.navbarMobile .perNavbarMobile:first-child {
+  border-top-left-radius: 15px;
+}
+
+.navbarMobile .perNavbarMobile:last-child {
+  border-top-right-radius: 15px;
+}
+
+.navbarMobile .perNavbarMobile {
+  width: calc(100% / 5);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+  text-align: center;
+}
+
+.navbarMobile .perNavbarMobile h3 {
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.navbarMobile .perNavbarMobile:hover {
+  opacity: 0.8;
+}
+
 
 .menu {
   width: 40px;
@@ -788,8 +873,15 @@ footer p span {
 }
 
 .containerModal.show {
-  transform: translateY(0);
-  transition: 0.5s;
+  transform: scaleY(1);
+  opacity: 1;
+  z-index: 9999999999;
+
+}
+
+
+.containerModal.show .modal {
+  transform: scaleY(1);
 }
 
 .containerModal {
@@ -801,10 +893,12 @@ footer p span {
   top: 0;
   left: 0;
   position: fixed;
-  transition: 0.5s;
-  transform: translateY(-150%);
+  transform: scaleY(0);
+  transform-origin: top;
+  animation: ease 3s;
+  opacity: 0;
   background-color: rgba(0, 0, 0, 0.349);
-  z-index: 99999999999;
+  z-index: -99;
   padding: 1rem;
 }
 
@@ -814,6 +908,10 @@ footer p span {
   border: 2px solid #e4e4e7;
   background-color: #fff;
   border-radius: 10px;
+  transition: .3s;
+  transform: scaleY(0);
+  pointer-events: auto;
+  transform-origin: top;
 }
 
 .modal .modal-title {
@@ -825,6 +923,7 @@ footer p span {
   margin-bottom: 20px;
 }
 
+
 .modal .modal-title h2 {
   font-size: 1.5rem;
   text-transform: capitalize;
@@ -834,8 +933,9 @@ footer p span {
   font-size: 1.5rem;
 }
 
+
 .modal .modal-title .icon:hover>* {
-  color: #2b46a6;
+  color: #2B46A6;
   cursor: pointer;
 }
 
@@ -843,8 +943,8 @@ footer p span {
   width: 100%;
   height: 300px;
   overflow: auto;
-  padding-left: 20px;
-  padding-right: 20px;
+  /* padding-left: 20px; */
+  /* padding-right: 20px; */
 }
 
 .modal .modal-footer {
@@ -853,6 +953,7 @@ footer p span {
   align-items: center;
   justify-content: space-between;
 }
+
 
 .hero.bisnis {
   background-color: var(--primary-color);
@@ -945,7 +1046,7 @@ footer p span {
   flex-wrap: wrap;
 }
 
-.courses .perCourses {
+.perCourses {
   width: calc(90% / 3);
   margin: 20px 15px;
   border: 1px solid var(--abu);
@@ -953,7 +1054,7 @@ footer p span {
   box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0.1, 0.2);
 }
 
-.courses .perCourses img {
+.perCourses img {
   height: 200px;
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
@@ -962,11 +1063,11 @@ footer p span {
   background-color: var(--abu);
 }
 
-.courses .perCourses .caption {
+.perCourses .caption {
   padding: 15px;
 }
 
-.courses .perCourses h2 {
+.perCourses h2 {
   font-size: 1.25rem;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -975,7 +1076,7 @@ footer p span {
   -webkit-line-clamp: 2;
 }
 
-.courses .perCourses p {
+.perCourses p {
   color: #79797a;
   margin-top: 0.5rem;
   font-size: 0.9rem;
@@ -986,14 +1087,14 @@ footer p span {
   -webkit-line-clamp: 3;
 }
 
-.courses .perCourses .infoCourses {
+.perCourses .infoCourses {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 20px 0;
 }
 
-.courses .perCourses .infoCourses .perInfoCourses {
+.perCourses .infoCourses .perInfoCourses {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1004,14 +1105,14 @@ footer p span {
   text-align: center;
 }
 
-.courses .perCourses .infoCourses .perInfoCourses span {
+.perCourses .infoCourses .perInfoCourses span {
   font-size: 0.8rem;
   margin-left: 0.5rem;
   color: #4256ac;
   font-weight: 600;
 }
 
-.courses .perCourses .price {
+.perCourses .price {
   display: flex;
   align-items: center;
   padding-top: 15px;
@@ -1019,13 +1120,13 @@ footer p span {
   border-top: 1px solid var(--abu);
 }
 
-.courses .perCourses .price .perPrice {
+.perCourses .price .perPrice {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.courses .perCourses button {
+.perCourses button {
   width: 100%;
   margin-top: 20px;
 }
@@ -1048,4 +1149,95 @@ footer p span {
   font-weight: 600;
   text-decoration: line-through;
   animation: blinker 1s linear infinite;
+}
+
+
+.perKelas {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.perKelas img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.perKelas .informasi-kelas {
+  display: flex;
+  align-items: center;
+}
+
+.perKelas .detail-kelas h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.perKelas .detail-kelas p {
+  font-size: .9rem;
+}
+
+.perKelas .fasilitas-kelas {
+  display: flex;
+  margin-top: 5px;
+}
+
+
+.perKelas .fasilitas-kelas .materi:first-child,
+.perKelas .fasilitas-kelas .quiz:first-child {
+  margin-right: 10px;
+}
+
+.perKelas .fasilitas-kelas .materi,
+.perKelas .fasilitas-kelas .quiz {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 10px;
+  background-color: #e0e4f3;
+  border-radius: 5px;
+  color: #4256ac;
+  text-align: center;
+}
+
+
+.perKelas .fasilitas-kelas p {
+  font-size: 0.7rem;
+  margin-left: 0.5rem;
+  color: #4256ac;
+  font-weight: 600;
+}
+
+.perKelas .lihatDetailKelas {
+  color: #4256ac;
+  font-weight: 600;
+}
+
+
+
+
+
+
+.contentMateri p {
+  margin: 10px 0;
+}
+
+.contentMateri a {
+  color: var(--biru-cerah);
+  font-weight: 600;
+}
+
+.contentMateri h3,
+.contentMateri h4,
+.contentMateri h5,
+.contentMateri h6 {
+  margin: 15px 0;
+}
+
+.contentMateri li {
+  list-style: disc;
+  margin: 5px 20px;
 }

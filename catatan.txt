@@ -25,6 +25,9 @@ merah => EF144A
 
 
 
+.detailKelas .tentangKelas .perTentangKelas .materi .bab
+
+
 
 
 

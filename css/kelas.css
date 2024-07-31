@@ -1,0 +1,104 @@
+/* Event */
+.heroEvent {
+    width: 100%;
+    height: 50vh;
+    background: url('../Assets/images/course/cta-background.webp');
+}
+
+.heroEvent .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.heroEvent .container span {
+    color: var(--putih);
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.heroEvent .container h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--putih);
+}
+
+.heroEvent .container p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: var(--putih);
+}
+
+
+.heroEvent .container form {
+    width: 40%;
+    height: 50px;
+    /* background-color: red; */
+    position: relative;
+}
+
+
+.heroEvent .container form input:focus,
+.heroEvent .container form input:focus~button {
+    outline: 2px ridge var(--putih);
+}
+
+.heroEvent .container form button {
+    background-color: rgb(46, 46, 46);
+}
+
+.titleSectionKelas {
+    font-size: 1.7rem;
+    /* font-weight: 700; */
+}
+
+.kategori {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.kategori .perKategori {
+    width: calc(90%/4);
+    background-color: var(--putih);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0.6rem 1.3rem rgba(0, 0, 0, 0.1);
+    border: 2px solid var(--putih);
+    transition: all .5s;
+}
+
+
+.kategori .perKategori:hover {
+    transition: all .5s;
+    border: 2px solid var(--biru-cerah);
+}
+
+.kategori .perKategori img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.kategori .perKategori h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+
+
+.kelas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* margin-top: 20px; */
+}

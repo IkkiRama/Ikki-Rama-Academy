@@ -26,13 +26,13 @@
   <link rel="apple-touch-icon" href="./Assets/logo/Group 1 (4).svg" />
   <link rel="shortcut icon" href="./Assets//logo/Group 1 (4).svg" type="image/x-icon" />
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"
-    integrity="sha512-Tn2m0TIpgVyTzzvmxLNuqbSJH3JP8jm+Cy3hvHrW7ndTDcJ1w5mBiksqDBb8GpE2ksktFvDB/ykZ0mDpsZj20w=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"
+    integrity="sha512-u3fPA7V8qQmhBPNT5quvaXVa1mnnLSXUep5PS1qo5NRzHwG19aHmNJnj1Q8hpA/nBWZtZD4r4AX6YOt5ynLN2g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 </head>
 
@@ -47,70 +47,69 @@
 
         <nav>
           <ul>
-            <li><a href="index.html" class="active">Flash Sale</a></li>
-            <li>
-              <a href="event.html">Kelas <i class="fas fa-caret-down"></i></a>
-            </li>
+            <li><a href="kelas.html">Beranda</a></li>
+            <li><a href="kelas.html">Kelas</a></li>
             <li><a href="artikel.html">Artikel</a></li>
-            <li><a href="artikel.html">Bootcamp</a></li>
+            <li><a href="bootcamp.html">Bootcamp</a></li>
           </ul>
         </nav>
       </div>
 
       <div class="kanan">
-        <div class="search">
+        <!-- <div class="search">
           <img src="./Assets/icons/Navbar/search.svg" alt="Search" />
-        </div>
+        </div> -->
 
-        <!-- <div class="keranjang">
+        <a href="keranjang.html" class="keranjang">
           <img src="./Assets/icons/Navbar/cart.svg" alt="Keranjang" />
           <span>10</span>
-        </div> -->
-        <!-- <img src="./Assets/images/darimun.jpg" alt="Foto User" class="fotoUser" /> -->
+        </a>
 
-        <a href="login.html" class="login btn btn-primary">Masuk / Daftar</a>
-        <div class="menu">
-          <input type="checkbox" />
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
+        <a href="profile.html">
+          <img src="./Assets/images/darimun.jpg" alt="Foto User" class="fotoUser" />
+        </a>
+
+        <!-- <a href="login.html" class="login btn btn-primary">Masuk / Daftar</a> -->
+
       </div>
-
-    </div>
   </header>
 
-  <nav class="navMobile">
-    <ul>
-      <li>
-        <a href="">
-          <img src="./Assets/icons/home.svg" alt="icon fitur">
-          <p>Home</p>
-        </a>
-      </li>
+  <div class="navbarMobile">
+    <a href="Index.html" class="perNavbarMobile active">
+      <div class="icon">
+        <i class="fa-solid fa-house"></i>
+      </div>
+      <h3>Home</h3>
+    </a>
 
-      <li>
-        <a href="">
-          <img src="./Assets/icons/feeds.svg" alt="icon fitur">
-          <p>Forum</p>
-        </a>
-      </li>
+    <a href="Event.html" class="perNavbarMobile">
+      <div class="icon">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+      <h3>Jelajahi</h3>
+    </a>
 
-      <li>
-        <a href="">
-          <img src="./Assets/icons/wishList.svg" alt="icon fitur">
-          <p>WishList</p>
-        </a>
-      </li>
+    <a href="Artikel.html" class="perNavbarMobile">
+      <div class="icon">
+        <i class="fa-solid fa-play"></i>
+      </div>
+      <h3>Pelajaran</h3>
+    </a>
 
-      <li>
-        <a href="">
-          <img src="./Assets/icons/Transaksi.svg" alt="icon fitur">
-          <p>Transaksi</p>
-        </a>
-      </li>
-    </ul>
-  </nav>
+    <a href="Login.html" class="perNavbarMobile">
+      <div class="icon">
+        <i class="fa-solid fa-book-open"></i>
+      </div>
+      <h3>Artikel</h3>
+    </a>
+
+    <a href="Login.html" class="perNavbarMobile">
+      <div class="icon">
+        <i class="fa-regular fa-circle-user"></i>
+      </div>
+      <h3>Profile</h3>
+    </a>
+  </div>
   <!-- header end -->
 
   <main>
@@ -639,6 +638,64 @@
               </div>
             </div>
 
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimoniMobileContainer mt-30 ">
+      <div class="container">
+        <div class="testimoniMobile">
+          <div class="perTestimoniMobile">
+            <p class="intiTestimoni">Rama Academy mengubah cara saya belajar. Mentor berpengalaman mereka benar-benar
+              membantu saya memahami
+              materi dengan lebih baik.</p>
+            <div class="orang">
+              <img src="./Assets/images/rifki.jpg" alt="img user yang kasih testimoni">
+              <div class="profile">
+                <h3>Rifki Romadhan</h3>
+                <p>Web Developer</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="perTestimoniMobile">
+            <p class="intiTestimoni">Rama Academy mengubah cara saya belajar. Mentor berpengalaman mereka benar-benar
+              membantu saya memahami
+              materi dengan lebih baik.</p>
+            <div class="orang">
+              <img src="./Assets/images/rifki.jpg" alt="img user yang kasih testimoni">
+              <div class="profile">
+                <h3>Rifki Romadhan</h3>
+                <p>Web Developer</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="perTestimoniMobile">
+            <p class="intiTestimoni">Rama Academy mengubah cara saya belajar. Mentor berpengalaman mereka benar-benar
+              membantu saya memahami
+              materi dengan lebih baik.</p>
+            <div class="orang">
+              <img src="./Assets/images/rifki.jpg" alt="img user yang kasih testimoni">
+              <div class="profile">
+                <h3>Rifki Romadhan</h3>
+                <p>Web Developer</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="perTestimoniMobile">
+            <p class="intiTestimoni">Rama Academy mengubah cara saya belajar. Mentor berpengalaman mereka benar-benar
+              membantu saya memahami
+              materi dengan lebih baik.</p>
+            <div class="orang">
+              <img src="./Assets/images/rifki.jpg" alt="img user yang kasih testimoni">
+              <div class="profile">
+                <h3>Rifki Romadhan</h3>
+                <p>Web Developer</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>

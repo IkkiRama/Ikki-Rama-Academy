@@ -60,6 +60,97 @@
 }
 
 @media (max-width: 1100px) {
+
+  .lihatPembayaran {
+    margin-top: 25px;
+  }
+
+  .lihatPembayaran img {
+    height: 350px;
+  }
+
+  .checkout {
+    width: 50%;
+  }
+
+  /* Per Detail Kursus */
+  .pembelajaran .playlist {
+    display: none;
+  }
+
+  .pembelajaran .materiPembelajaran {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 100px;
+  }
+
+  .pembelajaran .materiPembelajaran .containerJudul .icon .next,
+  .pembelajaran .materiPembelajaran .containerJudul .icon .prev {
+    display: none;
+  }
+
+  /* Per Detail Kursus */
+
+  /* Artikel */
+  .artikelPilihan .bigArtikel {
+    height: 300px;
+  }
+
+  .artikelPilihan .bigArtikel img {
+    width: 40%;
+  }
+
+  .artikelPilihan .bigArtikel .detailArtikel {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+  }
+
+  .artikelPilihan .bigArtikel .detailArtikel h3 {
+    font-size: 1.7rem;
+    line-height: 2.5rem;
+  }
+
+  .artikelPilihan .bigArtikel .detailArtikel p {
+    font-size: 1rem;
+    line-height: 1.7rem;
+  }
+
+  .artikel .perArtikel {
+    width: calc(93%/2);
+  }
+
+  /* Artikel */
+
+  /* Kelas */
+  .kategori {
+    flex-wrap: wrap;
+  }
+
+  .kategori .perKategori {
+    width: calc(90%/2);
+    margin: 10px 0;
+  }
+
+
+  /* Kelas */
+
+  /* Profile */
+  .profil .container .profil-orang {
+    width: 40%;
+  }
+
+  .profil .container .content {
+    width: 60%;
+  }
+
+  .profil .container .content .perKelas .lihatDetailKelas {
+    display: none;
+  }
+
+  /* End Profile */
   .footer .aboutFooter {
     display: none;
   }
@@ -99,7 +190,7 @@
     font-size: 0.9rem;
   }
 
-  .courses .perCourses {
+  .perCourses {
     width: calc(95% / 2);
     margin: 20px 7px;
   }
@@ -286,6 +377,54 @@
 
 @media (max-width: 900px) {
 
+  .checkout {
+    width: 60%;
+  }
+
+  /* Per Detail Kelas */
+  .pembelajaran .materiPembelajaran .materiVidio {
+    height: 500px;
+  }
+
+  /* Per Detail Kelas */
+
+
+  .detailKelas .container {
+    flex-wrap: wrap;
+  }
+
+  .detailKelas .tentangKelas {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .detailKelas .infoKelas {
+    width: 100%;
+    margin-top: -100px;
+    position: relative;
+    margin-bottom: 50px;
+  }
+
+  /* Artikel */
+  .artikelPilihan .bigArtikel {
+    margin-bottom: 25px;
+  }
+
+  .artikel .perArtikel img {
+    height: 200px;
+  }
+
+
+  /* Artikel */
+
+  /* Kelas */
+  .heroEvent {
+    /* width: 100%; */
+    height: 60vh;
+  }
+
+  /* Kelas */
+
   article,
   header,
   section {
@@ -437,12 +576,72 @@
 }
 
 @media (max-width: 850px) {
+
+  /* Profile */
+  .lihatPembayaran {
+    margin-top: 25px;
+  }
+
+  .lihatPembayaran .dataPembayaran {
+    width: 60%;
+  }
+
+  .lihatPembayaran img {
+    width: 40%;
+    height: 250px;
+  }
+
+
+
+  .profil .container {
+    flex-wrap: wrap;
+  }
+
+  .profil .container .profil-orang,
+  .profil .container .content {
+    width: 100%;
+  }
+
+  .profil .container .profil-orang {
+    position: inherit;
+    margin-bottom: 50px;
+  }
+
+  .profil .container .profil-orang .detail-orang .tentangSaya {
+    width: 100%;
+  }
+
+  .profil .container .content {
+    margin: 0 0 100px 0;
+  }
+
+  .profil .container .content .transaksi {
+    padding: 30px 20px;
+  }
+
+  .profil .container .content .transaksi table {
+    font-size: .9rem;
+  }
+
+  .profil .container .content .transaksi table a {
+    font-size: .8rem;
+  }
+
+  .profil .container .content .transaksi h1 {
+    padding: 0;
+  }
+
+  .profil .container .content .perKelas .lihatDetailKelas {
+    display: inherit;
+  }
+
+  /* End Profile */
   header nav {
     display: none;
   }
 
-  .navMobile {
-    display: inline-block;
+  .navbarMobile {
+    display: flex;
   }
 
   .menu {
@@ -472,6 +671,43 @@
 }
 
 @media (max-width: 800px) {
+
+
+  /* Per Detail Kelas */
+  .pembelajaran .materiPembelajaran .materiVidio {
+    height: 400px;
+  }
+
+  /* Per Detail Kelas */
+
+  .heroDetailKelas {
+    height: 100%;
+    max-height: inherit;
+  }
+
+  .heroDetailKelas .container {
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+  }
+
+  .heroDetailKelas img {
+    width: 70%;
+    margin: 0;
+    margin-bottom: 30px;
+    /* height: 300px; */
+  }
+
+  .heroDetailKelas .caption {
+    width: 100%;
+  }
+
+
+  .info {
+    width: 100%;
+  }
+
   .roadmap .perRoadmap img {
     height: 170px !important;
   }
@@ -512,7 +748,7 @@
     font-size: 1.2rem;
   }
 
-  .courses .perCourses {
+  .perCourses {
     /* width: 70%; */
     margin: 20px 5px;
   }
@@ -605,13 +841,14 @@
 
   .artikelPilihan .bigArtikel {
     flex-wrap: wrap;
+    height: 100%;
     margin-bottom: 25px;
   }
 
   .artikelPilihan .bigArtikel img {
     width: 100%;
-    border-radius: 10px;
     height: 300px;
+    border-radius: 10px;
   }
 
   .artikelPilihan .bigArtikel:hover img {
@@ -654,10 +891,53 @@
     width: 100%;
   }
 
+  .containerModal .modal-title .title {
+    padding: 0;
+  }
+
   /* Detail Event */
 }
 
 @media (max-width: 700px) {
+
+  .lihatPembayaran {
+    flex-wrap: wrap-reverse;
+  }
+
+  .lihatPembayaran .dataPembayaran {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .lihatPembayaran img {
+    width: 100%;
+    height: 500px;
+    margin-bottom: 20px;
+  }
+
+
+  .keranjang .produk h3 {
+    font-size: 1rem;
+  }
+
+  .keranjang .produk .table button {
+    font-size: .7rem;
+  }
+
+  .checkout {
+    width: 80%;
+  }
+
+  .testimoniMobile {
+    display: flex;
+  }
+
+  .heroDetailKelas img {
+    width: 100%;
+    /* height: 300px; */
+  }
+
+
   .roadmap .perRoadmap img {
     height: 150px !important;
   }
@@ -787,8 +1067,9 @@
     text-align: center;
   }
 
-  .courses .perCourses {
+  .perCourses {
     width: 90%;
+    min-width: inherit;
     margin: 10px 0;
   }
 
@@ -943,9 +1224,132 @@
     height: 80px;
   }
 
+  .artikel .perArtikel {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .artikel .perArtikel img {
+    height: 300px;
+  }
+
+  .artikel .perArtikel .detailArtikel h3 {
+    font-size: 1.5rem;
+    line-height: 2.3rem;
+  }
+
+  .artikelPilihan .bigArtikel .detailArtikel {
+    padding: 0 20px;
+    display: inherit;
+  }
+
+
 }
 
 @media (max-width: 600px) {
+
+  /* Per Detail Kelas */
+  .pembelajaran .materiPembelajaran .materiVidio {
+    height: 300px;
+  }
+
+  /* Per Detail Kelas */
+
+  /* kelas */
+  .kategori .perKategori {
+    flex-direction: column;
+  }
+
+  .kategori .perKategori img {
+    width: 50px;
+    height: 50px;
+    margin: 0;
+  }
+
+  .kategori .perKategori h2 {
+    font-size: 1rem;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  /* kelas */
+
+  .detailPembelian {
+    flex-wrap: wrap;
+    margin: 10px 0 30px 0;
+  }
+
+  .detailPembelian .perDetailPembelian {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .nota .container .table {
+    overflow-x: auto;
+  }
+
+  .nota .cta {
+    margin-top: 30px;
+  }
+
+
+  .nota .cta a {
+    margin-top: 20px;
+    font-size: .8rem;
+  }
+
+  /* Profile */
+  .kelas-bootcamp li .kelasKosong {
+    margin-top: 20px;
+  }
+
+  .kelas-bootcamp li .kelasKosong img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .kelas-bootcamp li .kelasKosong h1 {
+    /* font-size: 1.5rem; */
+    margin: 10px 0;
+  }
+
+  .kelas-bootcamp li .kelasKosong p {
+    width: 100%;
+    font-size: .9rem;
+    line-height: 1.5rem;
+  }
+
+
+  .profil .container .content {
+    overflow-x: auto;
+  }
+
+  .profil .container .content::-webkit-scrollbar {
+    height: 5px;
+  }
+
+  .profil .container .content::-webkit-scrollbar-track {
+    background: var(--putih);
+  }
+
+  .profil .container .content::-webkit-scrollbar-thumb {
+    background-color: var(--biru-cerah);
+    border-radius: 5px;
+  }
+
+  .profil .container .content .transaksi table {
+    font-size: .8rem;
+  }
+
+  .profil .container .content .transaksi table a {
+    font-size: .7rem;
+  }
+
+  .profil .container .content .perKelas .lihatDetailKelas {
+    display: none;
+  }
+
+  /* End Profile */
 
   .fasilitas .caption {
     width: 100%;
@@ -1070,6 +1474,86 @@
 }
 
 @media (max-width: 500px) {
+  .lihatPembayaran img {
+    height: 400px;
+  }
+
+  .checkout {
+    width: 100%;
+  }
+
+  .testimoniMobile .perTestimoniMobile {
+    width: 100%;
+  }
+
+  .pembelajaran .materiPembelajaran .containerJudul h1 {
+    font-size: 1.3rem;
+  }
+
+  .detailKelas .tentangKelas .perTentangKelas .materi .bab .isiMateri .perMateri .icon {
+    display: none;
+  }
+
+  .heroDetailKelas img {
+    height: 200px;
+    margin-bottom: 10px;
+  }
+
+  .heroDetailKelas .caption h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    /* color: var(--putih); */
+  }
+
+  .heroDetailKelas .caption p {
+    font-size: .9rem;
+    /* font-weight: 500; */
+    line-height: 1.5rem;
+    /* color: var(--putih); */
+  }
+
+
+  .info,
+  .info p {
+    font-size: .95rem;
+    line-height: 1.7rem;
+  }
+
+  /* Profile */
+  .profil .container .content {
+    padding: 0;
+    box-shadow: inherit;
+  }
+
+  .profil .container .content .heading-dashboard {
+    margin: 0 0 20px 0;
+  }
+
+  .profil .container .content .title-kelas {
+    margin: 0;
+  }
+
+  .profil .container .content .title-kelas li {
+    margin: 0 5px;
+  }
+
+  .profil .container .content .kelas-bootcamp li {
+    padding: 0;
+  }
+
+  .profil .container .content .kelas-bootcamp li .perKelas {
+    margin: 10px 0;
+  }
+
+  .profil .container .content .kelas-bootcamp li .perKelas .detail-kelas h2 {
+    font-size: 1rem;
+  }
+
+  .profil .container .content .kelas-bootcamp li .perKelas .fasilitas-kelas {
+    margin-top: 10px;
+  }
+
+  /* End Profile */
   .Mainbanner img {
     width: 120px;
     height: 200px;
@@ -1098,9 +1582,6 @@
     font-size: 0.9rem;
   }
 
-  .navMobile {
-    width: 60%;
-  }
 
   .title ul li,
   .heroArtikel ul li p {
@@ -1197,7 +1678,7 @@
     margin: 2px 0 0;
   }
 
-  .courses .perCourses {
+  .perCourses {
     width: 100%;
   }
 
@@ -1308,6 +1789,29 @@
 }
 
 @media (max-width: 450px) {
+
+  /* Per Detail Kelas */
+  .pembelajaran .materiPembelajaran .materiVidio {
+    height: 250px;
+  }
+
+  /* Per Detail Kelas */
+
+  /* kelas */
+  .heroEvent .container span {
+    font-size: 1rem;
+  }
+
+  .heroEvent .container h1 {
+    font-size: 1.7rem;
+    line-height: 2.3rem;
+  }
+
+  .heroEvent .container p {
+    font-size: .8rem;
+  }
+
+  /* kelas */
   .Mainbanner .cta {
     margin-top: 10px;
   }
@@ -1329,6 +1833,94 @@
 }
 
 @media (max-width: 400px) {
+
+  .lihatPembayaran img {
+    height: 300px;
+  }
+
+  /* Per Detail Kelas */
+  .pembelajaran .materiPembelajaran .materiVidio {
+    height: 200px;
+  }
+
+  .pembelajaran .isiPembelajaran .contentMateri,
+  .pembelajaran .materiPembelajaran .containerJudul {
+    padding: 10px;
+  }
+
+  .containerModal .modal-title h2 {
+    font-size: 1.1rem;
+  }
+
+  .containerModal .modal-title span {
+    font-size: .75rem;
+  }
+
+
+  /* Per Detail Kelas */
+
+  /* kelas */
+  .kategori .perKategori {
+    width: 100%;
+  }
+
+  /* kelas */
+
+  /* Profile */
+  .kelas-bootcamp li .kelasKosong {
+    margin-top: 30px;
+  }
+
+  .kelas-bootcamp li .kelasKosong img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .kelas-bootcamp li .kelasKosong h1 {
+    font-size: 1.3rem;
+    /* margin: 10px 0; */
+  }
+
+  .kelas-bootcamp li .kelasKosong p {
+    font-size: .8rem;
+    line-height: 1.5rem;
+  }
+
+  .profil .container .profil-orang .detail-orang .tentangSaya h3 {
+    font-size: 1rem;
+  }
+
+  .profil .container .profil-orang .detail-orang .tentangSaya p {
+    font-size: .9rem;
+  }
+
+  .profil .container .profil-orang .detail-orang .email {
+    font-size: .9rem;
+  }
+
+  .profil .container .profil-orang .detail-orang .sekolah {
+    font-size: 1rem;
+  }
+
+  .profil .container .profil-orang .detail-orang .pencapaian .perPencapaian p {
+    font-size: .9rem;
+  }
+
+  .profil .container .content .kelas-bootcamp li .perKelas .fasilitas-kelas .materi,
+  .profil .container .content .kelas-bootcamp li .perKelas .fasilitas-kelas .quiz {
+    padding: 4px 6px;
+  }
+
+  .profil .container .content .kelas-bootcamp li .perKelas .fasilitas-kelas .materi p,
+  .profil .container .content .kelas-bootcamp li .perKelas .fasilitas-kelas .quiz p {
+    font-size: .7rem;
+  }
+
+  .profil .container .content .kelas-bootcamp li .perKelas .fasilitas-kelas {
+    margin-top: 10px;
+  }
+
+  /* End Profile */
 
   .Mainbanner h1 {
     font-size: 2.2rem;
@@ -1623,10 +2215,22 @@
   /* Detail Artikel */
 
   header .kanan .search,
+  header .kanan .fotoUser,
   header .kanan .keranjang {
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
     padding: 5px;
+  }
+
+  header .kanan .keranjang span {
+    right: -2px;
+    width: 18px;
+    height: 18px;
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
   }
 
   .menu {
@@ -1644,6 +2248,39 @@
 }
 
 @media (max-width: 350px) {
+  .lihatPembayaran img {
+    height: 250px;
+  }
+
+  .requirement .perRequirement h3 {
+    font-size: .9rem;
+  }
+
+  /* kelas */
+  .heroEvent {
+    height: 50vh;
+  }
+
+  .heroEvent .container span {
+    font-size: .9rem;
+    margin-top: 50px;
+  }
+
+  .heroEvent .container h1 {
+    font-size: 1.3rem;
+    line-height: 2rem;
+  }
+
+  .heroEvent .container p {
+    /* font-size: .8rem; */
+  }
+
+  /* kelas */
+
+  .navbarMobile .perNavbarMobile {
+    padding: 0;
+  }
+
   .Mainbanner h1 {
     font-size: 2rem;
     line-height: 2.5rem;
@@ -1685,24 +2322,45 @@
     height: 200px;
   }
 
-  .courses .perCourses img {
+  .perCourses img {
     height: 170px;
   }
 
-  .courses .perCourses h2 {
+  .perCourses h2 {
     font-size: 1.2rem;
   }
 
-  .courses .perCourses p {
+  .perCourses p {
     font-size: 0.85rem;
   }
 
-  .courses .perCourses button {
+  .perCourses button {
     font-size: .9rem;
   }
+
+  .artikel .perArtikel img {
+    height: 170px;
+  }
+
 }
 
 @media (max-width: 300px) {
+
+  .profil .container .content .kelas-bootcamp li .perKelas .fasilitas-kelas {
+    flex-wrap: wrap;
+  }
+
+  .profil .container .content .kelas-bootcamp li .perKelas .fasilitas-kelas .materi {
+    margin-bottom: 5px;
+  }
+
+  header .kanan .search,
+  header .kanan .fotoUser,
+  header .kanan .keranjang {
+    width: 30px;
+    height: 30px;
+    padding: 3px;
+  }
 
   footer p,
   footer p span {

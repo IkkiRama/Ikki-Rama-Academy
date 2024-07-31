@@ -1,0 +1,88 @@
+.keranjang h1 {
+    font-size: 1.7rem;
+}
+
+.produk {
+    display: flex;
+    align-items: center;
+}
+
+.produk button {
+    padding: 0;
+    background-color: transparent;
+    color: inherit;
+}
+
+.table {
+    overflow-x: auto;
+}
+
+.table::-webkit-scrollbar {
+    height: 5px;
+}
+
+
+.produk th {
+    text-align: left;
+}
+
+.produk button:focus {
+    outline: 0;
+}
+
+.produk h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.produk button {
+    font-size: .85rem;
+    font-weight: 500;
+    width: inherit;
+    color: #302f2f;
+    border-radius: 0;
+}
+
+.produk .informasiProduk {
+    margin-left: 15px;
+}
+
+
+.checkoutContainer {
+    display: flex;
+    justify-content: end;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.checkout {
+    width: 40%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0.6rem 1.3rem rgba(0, 0, 0, 0.1);
+}
+
+.checkout .informasiCheckout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.checkout h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.checkout p {
+    margin: 5px 0;
+}
+
+.checkout form {
+    margin-top: 20px;
+}

@@ -80,44 +80,49 @@
         </div>
     </header>
 
-    <nav class="navMobile">
-        <ul>
-            <li>
-                <a href="">
-                    <img src="./Assets/icons/home.svg" alt="icon fitur">
-                    <p>Home</p>
-                </a>
-            </li>
+    <div class="navbarMobile">
+        <a href="Index.html" class="perNavbarMobile active">
+            <div class="icon">
+                <i class="fa-solid fa-house"></i>
+            </div>
+            <h3>Home</h3>
+        </a>
 
-            <li>
-                <a href="">
-                    <img src="./Assets/icons/feeds.svg" alt="icon fitur">
-                    <p>Forum</p>
-                </a>
-            </li>
+        <a href="Event.html" class="perNavbarMobile">
+            <div class="icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <h3>Jelajahi</h3>
+        </a>
 
-            <li>
-                <a href="">
-                    <img src="./Assets/icons/wishList.svg" alt="icon fitur">
-                    <p>WishList</p>
-                </a>
-            </li>
+        <a href="Artikel.html" class="perNavbarMobile">
+            <div class="icon">
+                <i class="fa-solid fa-play"></i>
+            </div>
+            <h3>Pelajaran</h3>
+        </a>
 
-            <li>
-                <a href="">
-                    <img src="./Assets/icons/Transaksi.svg" alt="icon fitur">
-                    <p>Transaksi</p>
-                </a>
-            </li>
-        </ul>
-    </nav>
+        <a href="Login.html" class="perNavbarMobile">
+            <div class="icon">
+                <i class="fa-solid fa-book-open"></i>
+            </div>
+            <h3>Artikel</h3>
+        </a>
+
+        <a href="Login.html" class="perNavbarMobile">
+            <div class="icon">
+                <i class="fa-regular fa-circle-user"></i>
+            </div>
+            <h3>Profile</h3>
+        </a>
+    </div>
     <!-- header end -->
 
     <main>
 
 
         <!-- 30 rem -->
-        <section class="heroDetailKelas">
+        <section class="heroDetailKelas pt-100">
             <div class="container d-flex align-items-center justify-content-space-between">
 
                 <div class="caption">
@@ -129,7 +134,7 @@
                         tailwindcss.
                     </p>
 
-                    <ul class="keterangan d-flex align-items-center justify-content-space-between mt-30 mb-30">
+                    <!-- <ul class="keterangan d-flex align-items-center mt-30 mb-30">
                         <li class="perKeterangan d-flex align-items-center">
                             <div class="icon">
                                 <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -161,10 +166,11 @@
                             </div>
                             <p>23 Episode</p>
                         </li>
-                    </ul>
+                    </ul> -->
 
-                    <a href="" class="btn btn-primary"><i class="fas fa-play mr-10"></i>Start</a>
-                    <a href="" class="btn btn-dark"><i class="fas fa-code mr-10"></i>Source Code</a>
+                    <a href="./perDetailCourses.html" class="btn btn-primary mt-30"><i
+                            class="fas fa-play mr-10"></i>Start</a>
+                    <!-- <a href="" class="btn btn-dark"><i class="fas fa-code mr-10"></i>Source Code</a> -->
                     <!-- <div class="btn"></div> -->
 
                 </div>
@@ -184,7 +190,7 @@
 
                         <h2>Tentang Kelas</h2>
 
-                        <div class="content">
+                        <div class="contentMateri">
                             <p>
                                 Di kelas ini, kita akan belajar bagaimana membuat sebuah website dari awal dengan
                                 menggunakan
@@ -675,7 +681,7 @@
                         </div>
                     </div>
 
-                    <div class="perTentangKelas">
+                    <!-- <div class="perTentangKelas">
                         <h2>Review Kelas</h2>
 
                         <p>Lihat review dari pengguna lain tentang kelas ini.</p>
@@ -771,7 +777,7 @@
                             </div>
                         </div>
 
-                    </div>
+                    </div> -->
                 </div>
 
                 <div class="infoKelas">
